@@ -1,20 +1,10 @@
-#encryption use_cases
-from encryption import makeDecryptedString
-from encryption import makeEncryptString
+import rsa
+from libs import * 
+
+# use_cases.encryption.*
+from use_cases.encryption import makeDecryptString, makeEncryptString
+decryptString = makeDecryptString(rsa, createLogger)
+encryptString = makeEncryptString(rsa, createLogger)
 
 #imageEdit use_cases
 
-
-
-decryptedString = makeDecryptedString()
-encryptString = makeEncryptString()
-
-def main():
-    message = "Something cool. This might be awesome!" 
-    publicKey, privateKey = rsa.newkeys(512)
-    encryptedMessage = encryptMessage(publicKey, message)
-    print({ 'encryptedMessage' : encryptedMessage})
-    decryptedMessage = decryptMessage(privateKey, datafromimage)
-    print({ 'decryptedMessage' : decryptedMessage})
-
-main()

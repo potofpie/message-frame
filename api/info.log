@@ -1,0 +1,16 @@
+INFO:2020-11-22 17:20:18,316:use_cases.encryption.makeEncryptString:>>>> use_cases.encryption.makeEncryptString
+INFO:2020-11-22 17:20:18,317:use_cases.encryption.makeEncryptString:String to be encrypted: Something cool. This might be awesome!
+INFO:2020-11-22 17:20:18,318:use_cases.encryption.makeEncryptString:Encrypted string: Something cool. This might be awesome!
+INFO:2020-11-22 17:20:18,318:use_cases.encryption.makeEncryptString:<<<< use_cases.encryption.makeEncryptString
+INFO:2020-11-22 17:20:18,330:use_cases.encryption.makeDecryptString:>>>> use_cases.encryption.makeDecryptString
+INFO:2020-11-22 17:20:18,330:use_cases.encryption.makeDecryptString:Encrypted string: b'\x1dm\x85\xf98\xcd\x19x\xaa\xbeK\xff\xcb\xbda\x87\xf7\xea\x9c\xe4t\xbf\xfa\xb7G\xe4\xed\xddd\xdd)\x160g\xc3\xed\x84W\x07\xd3W\xe5\xd7\xd3\x93\xd6\x10\xcdw<d\xcf\xf0\x91x<\x10\xcaP0\xf5X\x9f\x13'
+INFO:2020-11-22 17:20:18,332:use_cases.encryption.makeDecryptString:Decrypt string: b'Something cool. This might be awesome!'
+INFO:2020-11-22 17:20:18,332:use_cases.encryption.makeDecryptString:<<<< use_cases.encryption.makeDecryptString
+INFO : 2020-11-22 17:20:45,304 : use_cases.encryption.makeEncryptString : >>>> use_cases.encryption.makeEncryptString
+INFO : 2020-11-22 17:20:45,305 : use_cases.encryption.makeEncryptString : String to be encrypted: Something cool. This might be awesome!
+INFO : 2020-11-22 17:20:45,305 : use_cases.encryption.makeEncryptString : Encrypted string: Something cool. This might be awesome!
+INFO : 2020-11-22 17:20:45,306 : use_cases.encryption.makeEncryptString : <<<< use_cases.encryption.makeEncryptString
+INFO : 2020-11-22 17:20:45,315 : use_cases.encryption.makeDecryptString : >>>> use_cases.encryption.makeDecryptString
+INFO : 2020-11-22 17:20:45,315 : use_cases.encryption.makeDecryptString : Encrypted string: b"\x01\x959$\xc7\x08\xfc\xf1\xad%\xd6?\x84y\xd0\x06\x06\x01\x1b/Opk'v_j\xdey.0\xc9\xfcd\rv\xe1s\xbcX\x1c\xafw\x95\xe6,\x1e>\xa8\x00\xab\x1e\xbc\x8b#Ff\xaf\x9d`\xc7J\x9b\x11"
+INFO : 2020-11-22 17:20:45,317 : use_cases.encryption.makeDecryptString : Decrypt string: b'Something cool. This might be awesome!'
+INFO : 2020-11-22 17:20:45,317 : use_cases.encryption.makeDecryptString : <<<< use_cases.encryption.makeDecryptString
