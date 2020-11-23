@@ -1,9 +1,9 @@
 def makeEncryptString(rsa, createLogger):
     def encryptString(publicKey, string):
         logger = createLogger(__name__)
-        logger.info(f'String to be encrypted: {string}')
+        logger.info(f'string : {string}')
         encryptedString = rsa.encrypt(string.encode('utf-8'), publicKey)
-        logger.info(f'Encrypted string: {encryptedString}')
+        logger.info(f'encryptedString : {encryptedString}')
         return encryptedString
     return encryptString
     

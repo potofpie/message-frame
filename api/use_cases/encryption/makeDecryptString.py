@@ -1,9 +1,9 @@
 def makeDecryptString(rsa, createLogger):
     def decryptString(privateKey, encryptedString):
         logger = createLogger(__name__)
-        logger.info(f'Encrypted string: {encryptedString}')
-        text = rsa.decrypt(encryptedString, privateKey)
-        logger.info(f'Decrypted string: {text}')
-        return text.decode()
+        logger.info(f'encryptedString : {encryptedString}')
+        decryptedString = rsa.decrypt(encryptedString, privateKey)
+        logger.info(f'decryptedString : {decryptedString}')
+        return decryptedString.decode()
     return decryptString
     
