@@ -1,6 +1,7 @@
 import config
-import logging
+import logging, coloredlogs
 import sys
+coloredlogs.install()
 
 def createLogger(name):
     formatter = logging.Formatter('%(levelname)s : %(asctime)s : %(name)s : %(message)s')

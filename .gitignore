@@ -12,7 +12,9 @@
 
 # production
 /build
-*/__pycache__/
+*/__pycache__
+*.pyc
+info.log
 
 # misc
 .env

@@ -8,5 +8,8 @@ def main():
     publicKey, privateKey = rsa.newkeys(512)
     encryptedMessage = encryptString(publicKey, message)
     decryptedMessage = decryptString(privateKey, encryptedMessage)
-
+    logger.error('fuck')
+    logger.debug('fuck')
+    logging.warning('fuck')
+    logging.critical('fuck')
 main()
