@@ -1,4 +1,9 @@
-from makeImageEncryptionRoutes import makeImageEncryptionRoutes
-from makeVideoEncryptionRoutes import makeVideoEncryptionRoutes
+import json
+import use_cases
+import flask
+import libs 
 
-def makeRoutes(app):
+from routes.makeImageEncryptionRoutes import makeImageEncryptionRoutes
+
+def makeRoutes(app,path):
+    makeImageEncryptionRoutes(libs,use_cases,json,flask,app,path+'/imageEncryption')
