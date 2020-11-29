@@ -434,3 +434,193 @@ Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/Crypto/PublicKey/RSA.py", line 126, in __getattr__
     raise AttributeError("%s object has no %r attribute" % (self.__class__.__name__, attrname,))
 AttributeError: _RSAobj object has no 'blinded_decrypt' attribute
+ERROR : 2020-11-28 19:39:34,581 : routes.makeImageEncryptionRoutes (def createKeyPair) : _RSAobj object has no 'decode' attribute
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 7, in createKeyPair
+    keyPair = use_cases.createKeyPair()
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeCreateKeyPair.py", line 6, in createKeyPair
+    keyPair = {'private' : key.decode("utf-8"), 'public' : pubKey.decode("utf-8")}
+  File "/usr/lib/python3/dist-packages/Crypto/PublicKey/RSA.py", line 126, in __getattr__
+    raise AttributeError("%s object has no %r attribute" % (self.__class__.__name__, attrname,))
+AttributeError: _RSAobj object has no 'decode' attribute
+INFO : 2020-11-28 19:41:44,624 : use_cases.encryption.makeCreateKeyPair : keyPair : {'private': '-----BEGIN RSA PRIVATE KEY-----\nMIICXgIBAAKBgQDJcosWakmYlO6E8njdnmLjNfek19VxG7ZfA5MuvovAjsWEdgs/\nZDUZ9xVnQfCuNzXrQMglo1gcjOOG+9Y2aNHKVlTZoKPaTCtWZB58FP00aIR5T7Yf\nyeaMve0pzwzdD9Piq3IY9uRWJCaMrZyNLbmQ7NA16+RNNu672bEDD3HzqwIDAQAB\nAoGAPiSYpYSKSYiAAAEwqeUnSkImr/JpBKhw3OSkbcIYKIGiitdDZv3Jp8XiE2Vz\nErszZewpEftOvhf0RHrBvS0esghf9FnDSItgp69EbHslVMFH8bNoT1vpIjmT9yHH\nzsX/GojjNAbOp1izsY503UDH1VClFuf9PHCwKQ9o34rKAckCQQDKZ2oAHJnQY0il\nzQlAFm4DsSO2TeQWfPjrkMuQj7hOqYZ2SzRoHayc1l3DPASFyD8+lPCQTWQJ+wtL\n2MtV252NAkEA/spJwbv83pXVPmymqkgQJVOLJR0VZMV34QWOlJunSIFIQ52ujTJ+\nvLLCJ4t59ZA4kIhXXO4P6Vawa5SWWCD8FwJBAIYBXd7hEL01Xp3XWC6EKyZqm1hR\nzZdN+ogL/5qgbMg32Pxs4i+kpenYy489J0ljwOuwNG11r6wj9+CpkkYv9ukCQQDc\nYj7/+0nTggiMUVCr81872hJ+TLTHkGKL2dGlSymb9m96RPbJnQaw03JK4ELinBfB\nNJ1UfXp324sH0uNkYUuLAkEAxIEF+YwtkGsPS6tgreejHZGQmPbS65VA8tSWYGkh\nScifkjUt1vwLEp9vo1PkK94/hLrvDdwzBunMpdBIE5+UEw==\n-----END RSA PRIVATE KEY-----', 'public': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJcosWakmYlO6E8njdnmLjNfek\n19VxG7ZfA5MuvovAjsWEdgs/ZDUZ9xVnQfCuNzXrQMglo1gcjOOG+9Y2aNHKVlTZ\noKPaTCtWZB58FP00aIR5T7YfyeaMve0pzwzdD9Piq3IY9uRWJCaMrZyNLbmQ7NA1\n6+RNNu672bEDD3HzqwIDAQAB\n-----END PUBLIC KEY-----'}
+INFO : 2020-11-28 19:41:44,644 : routes.makeImageEncryptionRoutes (def createKeyPair) : {'keyPair': "{'private': '-----BEGIN RSA PRIVATE KEY-----\\nMIICXgIBAAKBgQDJcosWakmYlO6E8njdnmLjNfek19VxG7ZfA5MuvovAjsWEdgs/\\nZDUZ9xVnQfCuNzXrQMglo1gcjOOG+9Y2aNHKVlTZoKPaTCtWZB58FP00aIR5T7Yf\\nyeaMve0pzwzdD9Piq3IY9uRWJCaMrZyNLbmQ7NA16+RNNu672bEDD3HzqwIDAQAB\\nAoGAPiSYpYSKSYiAAAEwqeUnSkImr/JpBKhw3OSkbcIYKIGiitdDZv3Jp8XiE2Vz\\nErszZewpEftOvhf0RHrBvS0esghf9FnDSItgp69EbHslVMFH8bNoT1vpIjmT9yHH\\nzsX/GojjNAbOp1izsY503UDH1VClFuf9PHCwKQ9o34rKAckCQQDKZ2oAHJnQY0il\\nzQlAFm4DsSO2TeQWfPjrkMuQj7hOqYZ2SzRoHayc1l3DPASFyD8+lPCQTWQJ+wtL\\n2MtV252NAkEA/spJwbv83pXVPmymqkgQJVOLJR0VZMV34QWOlJunSIFIQ52ujTJ+\\nvLLCJ4t59ZA4kIhXXO4P6Vawa5SWWCD8FwJBAIYBXd7hEL01Xp3XWC6EKyZqm1hR\\nzZdN+ogL/5qgbMg32Pxs4i+kpenYy489J0ljwOuwNG11r6wj9+CpkkYv9ukCQQDc\\nYj7/+0nTggiMUVCr81872hJ+TLTHkGKL2dGlSymb9m96RPbJnQaw03JK4ELinBfB\\nNJ1UfXp324sH0uNkYUuLAkEAxIEF+YwtkGsPS6tgreejHZGQmPbS65VA8tSWYGkh\\nScifkjUt1vwLEp9vo1PkK94/hLrvDdwzBunMpdBIE5+UEw==\\n-----END RSA PRIVATE KEY-----', 'public': '-----BEGIN PUBLIC KEY-----\\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJcosWakmYlO6E8njdnmLjNfek\\n19VxG7ZfA5MuvovAjsWEdgs/ZDUZ9xVnQfCuNzXrQMglo1gcjOOG+9Y2aNHKVlTZ\\noKPaTCtWZB58FP00aIR5T7YfyeaMve0pzwzdD9Piq3IY9uRWJCaMrZyNLbmQ7NA1\\n6+RNNu672bEDD3HzqwIDAQAB\\n-----END PUBLIC KEY-----'}"}
+INFO : 2020-11-28 19:42:23,815 : use_cases.encryption.makeCreateKeyPair : keyPair : {'private': '-----BEGIN RSA PRIVATE KEY-----\nMIICWwIBAAKBgQCbCYh3gJCyxS+LDnzHGEqoTmPHe6X5N9YEN+JElRn5ZNK7GuUg\nekX+YH8FB7aZrZq2dhunUsgqz24JT91T3WvYB9E0bZK6lhCVNHdkOlotn8oMgnn/\nga5Vabh0szWv80cjlXZJR3O5aII5hpFS1fBSDIBDMud0j0mkIdNW7XXWlwIDAQAB\nAoGAcFIfxDQooNuq7hu42qUGsZjZQRSb0kpZiwTRsM402zHoWhXKGhV70Cco3wQP\njpbvl3FJ55dZ3WoaVjS+LJwmHGPdFVkRNTPiYa7R7hStgdr8wpXJhJ/pRAHXcep9\nfNJxevIzaRu3Uy2CTKsFPxuhEHcMRhM0jZs8sF4pR5SJdIECQQC+xtQQ33Cj3s4C\nFWVvPJlHmI+dlq8rPkbqw+eIlfzc414TY7xlr9JiH4d6A9OxPAXaSsGXJL9eZh1w\nOvcKKd/fAkEA0Aq3Bzd16k2c1TGoqZTEOHRFtkf5t4sqsFM1z0/94dGPvkvbhRFr\njKzUvkEYTqw1ou+D8MNvyiGeniIG9RsASQJAJFW2GiiUSYGr9tWgZhlCkFJMOBV0\n82V/GEOLm4YFjQR47HR4c12TUkDzCpgj/4OREcxfJqxHDnGgdbmlR3hGPQJAObk/\nX3k79m7ifSTyL1tftmpMjW8bEppClfoAjC0dvHJw99QEbL+Qn8+0l7VoESwnFbZv\nXXZcpjD92dKHK6r6QQJAGExvv8y+kPLvFYqVRhwUaTShTq6xPsUh94N9OrC+uZ6h\nWvJsdByQQAYnVHbIlRSEZqVIKU2Ha5liJASZsXZC6A==\n-----END RSA PRIVATE KEY-----', 'public': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCbCYh3gJCyxS+LDnzHGEqoTmPH\ne6X5N9YEN+JElRn5ZNK7GuUgekX+YH8FB7aZrZq2dhunUsgqz24JT91T3WvYB9E0\nbZK6lhCVNHdkOlotn8oMgnn/ga5Vabh0szWv80cjlXZJR3O5aII5hpFS1fBSDIBD\nMud0j0mkIdNW7XXWlwIDAQAB\n-----END PUBLIC KEY-----'}
+INFO : 2020-11-28 19:42:23,815 : use_cases.encryption.makeCreateKeyPair : keyPair : {'private': '-----BEGIN RSA PRIVATE KEY-----\nMIICWwIBAAKBgQCbCYh3gJCyxS+LDnzHGEqoTmPHe6X5N9YEN+JElRn5ZNK7GuUg\nekX+YH8FB7aZrZq2dhunUsgqz24JT91T3WvYB9E0bZK6lhCVNHdkOlotn8oMgnn/\nga5Vabh0szWv80cjlXZJR3O5aII5hpFS1fBSDIBDMud0j0mkIdNW7XXWlwIDAQAB\nAoGAcFIfxDQooNuq7hu42qUGsZjZQRSb0kpZiwTRsM402zHoWhXKGhV70Cco3wQP\njpbvl3FJ55dZ3WoaVjS+LJwmHGPdFVkRNTPiYa7R7hStgdr8wpXJhJ/pRAHXcep9\nfNJxevIzaRu3Uy2CTKsFPxuhEHcMRhM0jZs8sF4pR5SJdIECQQC+xtQQ33Cj3s4C\nFWVvPJlHmI+dlq8rPkbqw+eIlfzc414TY7xlr9JiH4d6A9OxPAXaSsGXJL9eZh1w\nOvcKKd/fAkEA0Aq3Bzd16k2c1TGoqZTEOHRFtkf5t4sqsFM1z0/94dGPvkvbhRFr\njKzUvkEYTqw1ou+D8MNvyiGeniIG9RsASQJAJFW2GiiUSYGr9tWgZhlCkFJMOBV0\n82V/GEOLm4YFjQR47HR4c12TUkDzCpgj/4OREcxfJqxHDnGgdbmlR3hGPQJAObk/\nX3k79m7ifSTyL1tftmpMjW8bEppClfoAjC0dvHJw99QEbL+Qn8+0l7VoESwnFbZv\nXXZcpjD92dKHK6r6QQJAGExvv8y+kPLvFYqVRhwUaTShTq6xPsUh94N9OrC+uZ6h\nWvJsdByQQAYnVHbIlRSEZqVIKU2Ha5liJASZsXZC6A==\n-----END RSA PRIVATE KEY-----', 'public': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCbCYh3gJCyxS+LDnzHGEqoTmPH\ne6X5N9YEN+JElRn5ZNK7GuUgekX+YH8FB7aZrZq2dhunUsgqz24JT91T3WvYB9E0\nbZK6lhCVNHdkOlotn8oMgnn/ga5Vabh0szWv80cjlXZJR3O5aII5hpFS1fBSDIBD\nMud0j0mkIdNW7XXWlwIDAQAB\n-----END PUBLIC KEY-----'}
+INFO : 2020-11-28 19:42:23,835 : routes.makeImageEncryptionRoutes (def createKeyPair) : {'keyPair': "{'private': '-----BEGIN RSA PRIVATE KEY-----\\nMIICWwIBAAKBgQCbCYh3gJCyxS+LDnzHGEqoTmPHe6X5N9YEN+JElRn5ZNK7GuUg\\nekX+YH8FB7aZrZq2dhunUsgqz24JT91T3WvYB9E0bZK6lhCVNHdkOlotn8oMgnn/\\nga5Vabh0szWv80cjlXZJR3O5aII5hpFS1fBSDIBDMud0j0mkIdNW7XXWlwIDAQAB\\nAoGAcFIfxDQooNuq7hu42qUGsZjZQRSb0kpZiwTRsM402zHoWhXKGhV70Cco3wQP\\njpbvl3FJ55dZ3WoaVjS+LJwmHGPdFVkRNTPiYa7R7hStgdr8wpXJhJ/pRAHXcep9\\nfNJxevIzaRu3Uy2CTKsFPxuhEHcMRhM0jZs8sF4pR5SJdIECQQC+xtQQ33Cj3s4C\\nFWVvPJlHmI+dlq8rPkbqw+eIlfzc414TY7xlr9JiH4d6A9OxPAXaSsGXJL9eZh1w\\nOvcKKd/fAkEA0Aq3Bzd16k2c1TGoqZTEOHRFtkf5t4sqsFM1z0/94dGPvkvbhRFr\\njKzUvkEYTqw1ou+D8MNvyiGeniIG9RsASQJAJFW2GiiUSYGr9tWgZhlCkFJMOBV0\\n82V/GEOLm4YFjQR47HR4c12TUkDzCpgj/4OREcxfJqxHDnGgdbmlR3hGPQJAObk/\\nX3k79m7ifSTyL1tftmpMjW8bEppClfoAjC0dvHJw99QEbL+Qn8+0l7VoESwnFbZv\\nXXZcpjD92dKHK6r6QQJAGExvv8y+kPLvFYqVRhwUaTShTq6xPsUh94N9OrC+uZ6h\\nWvJsdByQQAYnVHbIlRSEZqVIKU2Ha5liJASZsXZC6A==\\n-----END RSA PRIVATE KEY-----', 'public': '-----BEGIN PUBLIC KEY-----\\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCbCYh3gJCyxS+LDnzHGEqoTmPH\\ne6X5N9YEN+JElRn5ZNK7GuUgekX+YH8FB7aZrZq2dhunUsgqz24JT91T3WvYB9E0\\nbZK6lhCVNHdkOlotn8oMgnn/ga5Vabh0szWv80cjlXZJR3O5aII5hpFS1fBSDIBD\\nMud0j0mkIdNW7XXWlwIDAQAB\\n-----END PUBLIC KEY-----'}"}
+INFO : 2020-11-28 19:42:23,835 : routes.makeImageEncryptionRoutes (def createKeyPair) : {'keyPair': "{'private': '-----BEGIN RSA PRIVATE KEY-----\\nMIICWwIBAAKBgQCbCYh3gJCyxS+LDnzHGEqoTmPHe6X5N9YEN+JElRn5ZNK7GuUg\\nekX+YH8FB7aZrZq2dhunUsgqz24JT91T3WvYB9E0bZK6lhCVNHdkOlotn8oMgnn/\\nga5Vabh0szWv80cjlXZJR3O5aII5hpFS1fBSDIBDMud0j0mkIdNW7XXWlwIDAQAB\\nAoGAcFIfxDQooNuq7hu42qUGsZjZQRSb0kpZiwTRsM402zHoWhXKGhV70Cco3wQP\\njpbvl3FJ55dZ3WoaVjS+LJwmHGPdFVkRNTPiYa7R7hStgdr8wpXJhJ/pRAHXcep9\\nfNJxevIzaRu3Uy2CTKsFPxuhEHcMRhM0jZs8sF4pR5SJdIECQQC+xtQQ33Cj3s4C\\nFWVvPJlHmI+dlq8rPkbqw+eIlfzc414TY7xlr9JiH4d6A9OxPAXaSsGXJL9eZh1w\\nOvcKKd/fAkEA0Aq3Bzd16k2c1TGoqZTEOHRFtkf5t4sqsFM1z0/94dGPvkvbhRFr\\njKzUvkEYTqw1ou+D8MNvyiGeniIG9RsASQJAJFW2GiiUSYGr9tWgZhlCkFJMOBV0\\n82V/GEOLm4YFjQR47HR4c12TUkDzCpgj/4OREcxfJqxHDnGgdbmlR3hGPQJAObk/\\nX3k79m7ifSTyL1tftmpMjW8bEppClfoAjC0dvHJw99QEbL+Qn8+0l7VoESwnFbZv\\nXXZcpjD92dKHK6r6QQJAGExvv8y+kPLvFYqVRhwUaTShTq6xPsUh94N9OrC+uZ6h\\nWvJsdByQQAYnVHbIlRSEZqVIKU2Ha5liJASZsXZC6A==\\n-----END RSA PRIVATE KEY-----', 'public': '-----BEGIN PUBLIC KEY-----\\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCbCYh3gJCyxS+LDnzHGEqoTmPH\\ne6X5N9YEN+JElRn5ZNK7GuUgekX+YH8FB7aZrZq2dhunUsgqz24JT91T3WvYB9E0\\nbZK6lhCVNHdkOlotn8oMgnn/ga5Vabh0szWv80cjlXZJR3O5aII5hpFS1fBSDIBD\\nMud0j0mkIdNW7XXWlwIDAQAB\\n-----END PUBLIC KEY-----'}"}
+INFO : 2020-11-28 19:42:45,923 : use_cases.encryption.makeCreateKeyPair : keyPair : {'private': '-----BEGIN RSA PRIVATE KEY-----\nMIICXAIBAAKBgQDTee/L31eXiodt8IGdKLX0mXZsEjAmT9iYbhFY+7TGhLr/M8wr\n6F9MEGrG634O7FHSle4aSH4S4PVIbi9ZObxdlGkudYbmssll9lsFJh6GWh8GgS+B\nElCsm6ok0Cs32IjEOCvIFo/m0QnjQ4fHyWGtVBOWrVVVJCdc2/I+wRxw1wIDAQAB\nAoGAFMIWYLu2nGBztL3z6xpQ6gaaUjdi1I/n4eaD+2kRsJ7cwCo0c2bm28+Mu6Po\nBsz5pyMicSAGiBHe4dI3AZoiPBukFcJBmb17zKQ2OxYQHI+zFQxDEd9+sLjBMELY\nd2RSlonYSgsPGQDWGDW1XvrS71JEcoqamtiv9RHvVXU/drkCQQDmqM3Qpn4pCZKe\ngln2MR8amgOnizxFWc8mPKgnc2IC94GIdJP91j4k07eRaKMVY9D//AzbAuXfPkqY\nFhyNvp3DAkEA6rWd9ErwbxrpMKdPr/B7gt3X26qha6TCf/oU1UJkMEzmBt+FJQ5W\n+gGt87hdpEat63DYdD3DYj88nG1UR3dLXQJARJpIPJqIQ2RZe1OBtjt96MeN9rLu\nxiGj/tdjm/gxWniKyi8CJSknaoSdwF3Cw4Xgj4JDwI/oFrHMNde9vlrHSQJBANQV\nJlR/fsC2jW30UTJG2CRJd2q7xT6yUzo27KpDYqquYdBmGzZ/vaIM8HVg6+SsJS2w\n+zYWNT3KrGcg913YctUCQG7mtYy8hzDhnb5W0fm8MhDDBth0640vHfNkav1AzeQu\nvjukfmFYD/cMayzQaAg8vcWw0xsTS6zHsdQlsXx1SFs=\n-----END RSA PRIVATE KEY-----', 'public': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDTee/L31eXiodt8IGdKLX0mXZs\nEjAmT9iYbhFY+7TGhLr/M8wr6F9MEGrG634O7FHSle4aSH4S4PVIbi9ZObxdlGku\ndYbmssll9lsFJh6GWh8GgS+BElCsm6ok0Cs32IjEOCvIFo/m0QnjQ4fHyWGtVBOW\nrVVVJCdc2/I+wRxw1wIDAQAB\n-----END PUBLIC KEY-----'}
+INFO : 2020-11-28 19:45:45,110 : use_cases.encryption.makeCreateKeyPair : keyPair : {'private': '-----BEGIN RSA PRIVATE KEY-----\nMIICXgIBAAKBgQDKKe4QOJw5nNlH/N70iHv1RZ0xeak8/Uj7YbYJFyiD/RkfxcyS\nGm5R23Zq5xeCaPLPhFhOz2x3IaB8k6jdTq8juDVJHEUGYFCsV1GlLPHjHensEqLy\nU2fOnI+sHsAXZ0rX9JFBajlwM+K61HRPu2hc5WcoW+xlGhVQxtXh3tGm4QIDAQAB\nAoGAcqf/NcH1kJNNhA99n7B8pSm7MmEuw8FfD/tl05gHyXvVMPjswfwtj01pxs2T\nvsmo1FrZ/rCTcqlmrODOB93lY9lZfBJasdMZXsTf0+DtBWitVW25gPC9QpdZbjFa\nEhLWcrzGcgZH7vwX/BV7Smbsd4N0nKpM2xihMJTrIPYP/lUCQQDXaA1bMNBYTnZv\nZ0HnyMqf7TMa4Lv9NnQ+0EYepZ2qIN59lUQ3vj8O3mtzKOaDC5CH4rGu81ym4UNz\n5SxY/2PDAkEA8EMBjmjWB0U0r2ZdHxER5WIuVGjCnmnOpl5u2/MHM3rkKs7JvGjn\naEJisjg68RzU2edzBqMU5/Uj+eFpsMPUiwJBALD73lV5swWLWkZISd8+nDVwuBey\nZOM01agyihpuKy/4l7YJaaZ/WuJFn3VcOqGbY+IyQZmkfRDkbv6PYrOxCu8CQQDp\nwhe6ic9rJW88FFkXx9Dkn6C56W8pF4LCpXAwuYRRFwj1iVoH4Pz8mFJUWZcnTcjd\n9W0ZkQPfJsgI78KYBAA/AkEAtsssOzGzGWOp/EmYmgJg1QzT7Le+at8LSpYCp/sh\n3OFS6t9UQC3yvHm9VlVAfFeu/cMT9fR2i6BByOiR7g8jKQ==\n-----END RSA PRIVATE KEY-----', 'public': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDKKe4QOJw5nNlH/N70iHv1RZ0x\neak8/Uj7YbYJFyiD/RkfxcySGm5R23Zq5xeCaPLPhFhOz2x3IaB8k6jdTq8juDVJ\nHEUGYFCsV1GlLPHjHensEqLyU2fOnI+sHsAXZ0rX9JFBajlwM+K61HRPu2hc5Wco\nW+xlGhVQxtXh3tGm4QIDAQAB\n-----END PUBLIC KEY-----'}
+INFO : 2020-11-28 19:47:02,523 : use_cases.encryption.makeCreateKeyPair : keyPair : {'private': '-----BEGIN RSA PRIVATE KEY-----\nMIICWwIBAAKBgQDoLYTdkMMdX4S3N7PsXsxZk9l14iC7b0OVAIFbQYOE0Pj/guSg\nuKI7JdkqO213pJhUmZunsF19crzylRLreGjHFT36TWoWue+/D8ABRIavWDd5RST9\nAIO2dUuHN76Pp1jlDAAuPWG18cSDSr4cfVA2uZP+IBJqckNhVwqQXr72aQIDAQAB\nAoGAAQ5D7mX8HSQUDGk6bja4Iygi8wBGOdP1sLXB4NJZcL8qgq7rrzdntXEknaaL\nhuG+t5PDO2333twos8mtvlhb0Zm1XEtXeZsBdCPoDnLBkOgE+orvpZkSXsDS+eRq\nZu+MSomjFEjmwuZ4j4Fw75yQXMsnxiOQ0UDRebeha0bKbSkCQQDt1zLaiW6i/ZU+\n4dS3AX1HU12bOvKxfEEnPOp84XhtDdiykiQgW78rl1hxNpy+07fdrYN1IQwL8fwl\nWT9QtvfzAkEA+eeiw9PQ6V1rp3bINCps1pLfmknL1snBmCs0cnMf3HXtfB8SuHk/\nmEAWOxUy27d2rr3Zu01xnKv+3/b69/NrMwJAF6PWKCaU2pp95RwpOm9pdldw7Gb1\njHKfPzkszXDTuXMw4L7p3FWCMOEAJ3CYL9d3ZQ9EC7ZXLjDFMSknw+wLxQJAYZk4\ndRh1X56Pm8CFIfJrvUVxNHWbuU/kXsSI4CXcDKK11CLikc8wqgplZD+8NBkrrcUR\nktgFBfYaPWfczhdwBwJADv/PqqB9V/4T7BF1EsCBIYVgxWoUOCjkXlPWzZwbK0fY\nIhWdTOyQVChoNQ7jhE50PY1a351F08vYf4t5VkNafQ==\n-----END RSA PRIVATE KEY-----', 'public': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDoLYTdkMMdX4S3N7PsXsxZk9l1\n4iC7b0OVAIFbQYOE0Pj/guSguKI7JdkqO213pJhUmZunsF19crzylRLreGjHFT36\nTWoWue+/D8ABRIavWDd5RST9AIO2dUuHN76Pp1jlDAAuPWG18cSDSr4cfVA2uZP+\nIBJqckNhVwqQXr72aQIDAQAB\n-----END PUBLIC KEY-----'}
+ERROR : 2020-11-28 19:55:01,122 : routes.makeImageEncryptionRoutes (def encryptString) : module 'Crypto' has no attribute 'importKey'
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 22, in encryptString
+    encryptedString = use_cases.encryptString(publicKey, string)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeEncryptString.py", line 4, in encryptString
+    key = Crypto.importKey(publicKey)
+AttributeError: module 'Crypto' has no attribute 'importKey'
+ERROR : 2020-11-28 19:55:57,423 : routes.makeImageEncryptionRoutes (def encryptString) : name 'pub' is not defined
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 22, in encryptString
+    encryptedString = use_cases.encryptString(publicKey, string)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeEncryptString.py", line 4, in encryptString
+    pubKey = Crypto.PublicKey.RSA.importKey(str.encode(pub))
+NameError: name 'pub' is not defined
+INFO : 2020-11-28 19:56:13,967 : use_cases.encryption.makeEncryptString : encryptedString : (b'\xdb\x8cCVs\xdf\x1e\xdf\x02\x95\xd8\xb7\xa6\x1b&\xbf\x15\xa5{\xc9\xcc/0]\xf8\xaf\xa8\x12\xe5Z\x15\xc6\xe4\xa5\x9a\t\xe2D\x049\x16/\xafu\xef\xcd\xdb\xf6\xac\x86\x90\xf6\xdc\xc8\n\xdd\xf8e\xa5lPh\x84\xad\xf1B\xa4w\x80\xddo\x96\xa4\xfa\x06\xb9V\x8a\xb5\xb2\x8e\xc1\x12y,mvd\x9e\xd4K\x9aZ\xe1|_\x04\x91\x16\xeb;\x15\xe9\xf3\xf0Z\xbc@\xb6\x83\x133p\x17\xc6c\x87\xa5\xbbW\xf9\xec\x8bz\xa5\xddv\x89',)
+INFO : 2020-11-28 19:56:13,968 : routes.makeImageEncryptionRoutes (def encryptString) : {'encryptedString': "(b'\\xdb\\x8cCVs\\xdf\\x1e\\xdf\\x02\\x95\\xd8\\xb7\\xa6\\x1b&\\xbf\\x15\\xa5{\\xc9\\xcc/0]\\xf8\\xaf\\xa8\\x12\\xe5Z\\x15\\xc6\\xe4\\xa5\\x9a\\t\\xe2D\\x049\\x16/\\xafu\\xef\\xcd\\xdb\\xf6\\xac\\x86\\x90\\xf6\\xdc\\xc8\\n\\xdd\\xf8e\\xa5lPh\\x84\\xad\\xf1B\\xa4w\\x80\\xddo\\x96\\xa4\\xfa\\x06\\xb9V\\x8a\\xb5\\xb2\\x8e\\xc1\\x12y,mvd\\x9e\\xd4K\\x9aZ\\xe1|_\\x04\\x91\\x16\\xeb;\\x15\\xe9\\xf3\\xf0Z\\xbc@\\xb6\\x83\\x133p\\x17\\xc6c\\x87\\xa5\\xbbW\\xf9\\xec\\x8bz\\xa5\\xddv\\x89',)"}
+INFO : 2020-11-28 19:56:52,866 : use_cases.encryption.makeEncryptString : encryptedString : (b'\xdb\x8cCVs\xdf\x1e\xdf\x02\x95\xd8\xb7\xa6\x1b&\xbf\x15\xa5{\xc9\xcc/0]\xf8\xaf\xa8\x12\xe5Z\x15\xc6\xe4\xa5\x9a\t\xe2D\x049\x16/\xafu\xef\xcd\xdb\xf6\xac\x86\x90\xf6\xdc\xc8\n\xdd\xf8e\xa5lPh\x84\xad\xf1B\xa4w\x80\xddo\x96\xa4\xfa\x06\xb9V\x8a\xb5\xb2\x8e\xc1\x12y,mvd\x9e\xd4K\x9aZ\xe1|_\x04\x91\x16\xeb;\x15\xe9\xf3\xf0Z\xbc@\xb6\x83\x133p\x17\xc6c\x87\xa5\xbbW\xf9\xec\x8bz\xa5\xddv\x89',)
+ERROR : 2020-11-28 19:56:52,868 : routes.makeImageEncryptionRoutes (def encryptString) : 'tuple' object has no attribute 'decode'
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 22, in encryptString
+    encryptedString = use_cases.encryptString(publicKey, string)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeEncryptString.py", line 7, in encryptString
+    return encryptedString.decode()
+AttributeError: 'tuple' object has no attribute 'decode'
+INFO : 2020-11-28 19:57:25,226 : use_cases.encryption.makeEncryptString : encryptedString : (b'\xdb\x8cCVs\xdf\x1e\xdf\x02\x95\xd8\xb7\xa6\x1b&\xbf\x15\xa5{\xc9\xcc/0]\xf8\xaf\xa8\x12\xe5Z\x15\xc6\xe4\xa5\x9a\t\xe2D\x049\x16/\xafu\xef\xcd\xdb\xf6\xac\x86\x90\xf6\xdc\xc8\n\xdd\xf8e\xa5lPh\x84\xad\xf1B\xa4w\x80\xddo\x96\xa4\xfa\x06\xb9V\x8a\xb5\xb2\x8e\xc1\x12y,mvd\x9e\xd4K\x9aZ\xe1|_\x04\x91\x16\xeb;\x15\xe9\xf3\xf0Z\xbc@\xb6\x83\x133p\x17\xc6c\x87\xa5\xbbW\xf9\xec\x8bz\xa5\xddv\x89',)
+INFO : 2020-11-28 19:57:25,227 : use_cases.encryption.makeEncryptString : encryptedString : <class 'tuple'>
+INFO : 2020-11-28 19:57:25,228 : routes.makeImageEncryptionRoutes (def encryptString) : {'encryptedString': "(b'\\xdb\\x8cCVs\\xdf\\x1e\\xdf\\x02\\x95\\xd8\\xb7\\xa6\\x1b&\\xbf\\x15\\xa5{\\xc9\\xcc/0]\\xf8\\xaf\\xa8\\x12\\xe5Z\\x15\\xc6\\xe4\\xa5\\x9a\\t\\xe2D\\x049\\x16/\\xafu\\xef\\xcd\\xdb\\xf6\\xac\\x86\\x90\\xf6\\xdc\\xc8\\n\\xdd\\xf8e\\xa5lPh\\x84\\xad\\xf1B\\xa4w\\x80\\xddo\\x96\\xa4\\xfa\\x06\\xb9V\\x8a\\xb5\\xb2\\x8e\\xc1\\x12y,mvd\\x9e\\xd4K\\x9aZ\\xe1|_\\x04\\x91\\x16\\xeb;\\x15\\xe9\\xf3\\xf0Z\\xbc@\\xb6\\x83\\x133p\\x17\\xc6c\\x87\\xa5\\xbbW\\xf9\\xec\\x8bz\\xa5\\xddv\\x89',)"}
+INFO : 2020-11-28 19:57:55,625 : use_cases.encryption.makeEncryptString : encryptedString : b'\xdb\x8cCVs\xdf\x1e\xdf\x02\x95\xd8\xb7\xa6\x1b&\xbf\x15\xa5{\xc9\xcc/0]\xf8\xaf\xa8\x12\xe5Z\x15\xc6\xe4\xa5\x9a\t\xe2D\x049\x16/\xafu\xef\xcd\xdb\xf6\xac\x86\x90\xf6\xdc\xc8\n\xdd\xf8e\xa5lPh\x84\xad\xf1B\xa4w\x80\xddo\x96\xa4\xfa\x06\xb9V\x8a\xb5\xb2\x8e\xc1\x12y,mvd\x9e\xd4K\x9aZ\xe1|_\x04\x91\x16\xeb;\x15\xe9\xf3\xf0Z\xbc@\xb6\x83\x133p\x17\xc6c\x87\xa5\xbbW\xf9\xec\x8bz\xa5\xddv\x89'
+INFO : 2020-11-28 19:57:55,626 : use_cases.encryption.makeEncryptString : encryptedString : <class 'tuple'>
+INFO : 2020-11-28 19:57:55,639 : routes.makeImageEncryptionRoutes (def encryptString) : {'encryptedString': "(b'\\xdb\\x8cCVs\\xdf\\x1e\\xdf\\x02\\x95\\xd8\\xb7\\xa6\\x1b&\\xbf\\x15\\xa5{\\xc9\\xcc/0]\\xf8\\xaf\\xa8\\x12\\xe5Z\\x15\\xc6\\xe4\\xa5\\x9a\\t\\xe2D\\x049\\x16/\\xafu\\xef\\xcd\\xdb\\xf6\\xac\\x86\\x90\\xf6\\xdc\\xc8\\n\\xdd\\xf8e\\xa5lPh\\x84\\xad\\xf1B\\xa4w\\x80\\xddo\\x96\\xa4\\xfa\\x06\\xb9V\\x8a\\xb5\\xb2\\x8e\\xc1\\x12y,mvd\\x9e\\xd4K\\x9aZ\\xe1|_\\x04\\x91\\x16\\xeb;\\x15\\xe9\\xf3\\xf0Z\\xbc@\\xb6\\x83\\x133p\\x17\\xc6c\\x87\\xa5\\xbbW\\xf9\\xec\\x8bz\\xa5\\xddv\\x89',)"}
+ERROR : 2020-11-28 19:58:28,245 : routes.makeImageEncryptionRoutes (def encryptString) : 'utf-8' codec can't decode byte 0xdf in position 5: invalid continuation byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 22, in encryptString
+    encryptedString = use_cases.encryptString(publicKey, string)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeEncryptString.py", line 6, in encryptString
+    logger.info(f'encryptedString : {encryptedString[0].decode()}')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xdf in position 5: invalid continuation byte
+ERROR : 2020-11-28 19:58:40,952 : routes.makeImageEncryptionRoutes (def encryptString) : 'utf-8' codec can't decode byte 0xdf in position 5: invalid continuation byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 22, in encryptString
+    encryptedString = use_cases.encryptString(publicKey, string)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeEncryptString.py", line 6, in encryptString
+    logger.info(f'encryptedString : {encryptedString[0].decode()}')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xdf in position 5: invalid continuation byte
+INFO : 2020-11-28 20:00:34,782 : use_cases.encryption.makeEncryptString : encryptedString : [219, 140, 67, 86, 115, 223, 30, 223, 2, 149, 216, 183, 166, 27, 38, 191, 21, 165, 123, 201, 204, 47, 48, 93, 248, 175, 168, 18, 229, 90, 21, 198, 228, 165, 154, 9, 226, 68, 4, 57, 22, 47, 175, 117, 239, 205, 219, 246, 172, 134, 144, 246, 220, 200, 10, 221, 248, 101, 165, 108, 80, 104, 132, 173, 241, 66, 164, 119, 128, 221, 111, 150, 164, 250, 6, 185, 86, 138, 181, 178, 142, 193, 18, 121, 44, 109, 118, 100, 158, 212, 75, 154, 90, 225, 124, 95, 4, 145, 22, 235, 59, 21, 233, 243, 240, 90, 188, 64, 182, 131, 19, 51, 112, 23, 198, 99, 135, 165, 187, 87, 249, 236, 139, 122, 165, 221, 118, 137]
+INFO : 2020-11-28 20:00:34,795 : routes.makeImageEncryptionRoutes (def encryptString) : {'encryptedString': "(b'\\xdb\\x8cCVs\\xdf\\x1e\\xdf\\x02\\x95\\xd8\\xb7\\xa6\\x1b&\\xbf\\x15\\xa5{\\xc9\\xcc/0]\\xf8\\xaf\\xa8\\x12\\xe5Z\\x15\\xc6\\xe4\\xa5\\x9a\\t\\xe2D\\x049\\x16/\\xafu\\xef\\xcd\\xdb\\xf6\\xac\\x86\\x90\\xf6\\xdc\\xc8\\n\\xdd\\xf8e\\xa5lPh\\x84\\xad\\xf1B\\xa4w\\x80\\xddo\\x96\\xa4\\xfa\\x06\\xb9V\\x8a\\xb5\\xb2\\x8e\\xc1\\x12y,mvd\\x9e\\xd4K\\x9aZ\\xe1|_\\x04\\x91\\x16\\xeb;\\x15\\xe9\\xf3\\xf0Z\\xbc@\\xb6\\x83\\x133p\\x17\\xc6c\\x87\\xa5\\xbbW\\xf9\\xec\\x8bz\\xa5\\xddv\\x89',)"}
+ERROR : 2020-11-28 20:04:16,266 : routes.makeImageEncryptionRoutes (def encryptString) : 'utf-8' codec can't decode byte 0xdf in position 5: invalid continuation byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 22, in encryptString
+    encryptedString = use_cases.encryptString(publicKey, string)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeEncryptString.py", line 6, in encryptString
+    logger.info(f'encryptedString : {encryptedString[0].decode("utf-8")}')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xdf in position 5: invalid continuation byte
+ERROR : 2020-11-28 20:05:28,777 : routes.makeImageEncryptionRoutes (def encryptString) : encode() missing 1 required positional argument: 'output'
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 22, in encryptString
+    encryptedString = use_cases.encryptString(publicKey, string)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeEncryptString.py", line 7, in encryptString
+    logger.info(f'encryptedString : {base64.encode(encryptedString[0]).decode("utf-8")}')
+TypeError: encode() missing 1 required positional argument: 'output'
+INFO : 2020-11-28 20:06:20,024 : use_cases.encryption.makeEncryptString : encryptedString : 24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34
+ZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX
+xmOHpbtX+eyLeqXddok=
+
+INFO : 2020-11-28 20:06:20,026 : routes.makeImageEncryptionRoutes (def encryptString) : {'encryptedString': "(b'\\xdb\\x8cCVs\\xdf\\x1e\\xdf\\x02\\x95\\xd8\\xb7\\xa6\\x1b&\\xbf\\x15\\xa5{\\xc9\\xcc/0]\\xf8\\xaf\\xa8\\x12\\xe5Z\\x15\\xc6\\xe4\\xa5\\x9a\\t\\xe2D\\x049\\x16/\\xafu\\xef\\xcd\\xdb\\xf6\\xac\\x86\\x90\\xf6\\xdc\\xc8\\n\\xdd\\xf8e\\xa5lPh\\x84\\xad\\xf1B\\xa4w\\x80\\xddo\\x96\\xa4\\xfa\\x06\\xb9V\\x8a\\xb5\\xb2\\x8e\\xc1\\x12y,mvd\\x9e\\xd4K\\x9aZ\\xe1|_\\x04\\x91\\x16\\xeb;\\x15\\xe9\\xf3\\xf0Z\\xbc@\\xb6\\x83\\x133p\\x17\\xc6c\\x87\\xa5\\xbbW\\xf9\\xec\\x8bz\\xa5\\xddv\\x89',)"}
+INFO : 2020-11-28 20:06:51,734 : use_cases.encryption.makeEncryptString : encryptedString : b'24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'
+INFO : 2020-11-28 20:06:51,736 : routes.makeImageEncryptionRoutes (def encryptString) : {'encryptedString': "(b'\\xdb\\x8cCVs\\xdf\\x1e\\xdf\\x02\\x95\\xd8\\xb7\\xa6\\x1b&\\xbf\\x15\\xa5{\\xc9\\xcc/0]\\xf8\\xaf\\xa8\\x12\\xe5Z\\x15\\xc6\\xe4\\xa5\\x9a\\t\\xe2D\\x049\\x16/\\xafu\\xef\\xcd\\xdb\\xf6\\xac\\x86\\x90\\xf6\\xdc\\xc8\\n\\xdd\\xf8e\\xa5lPh\\x84\\xad\\xf1B\\xa4w\\x80\\xddo\\x96\\xa4\\xfa\\x06\\xb9V\\x8a\\xb5\\xb2\\x8e\\xc1\\x12y,mvd\\x9e\\xd4K\\x9aZ\\xe1|_\\x04\\x91\\x16\\xeb;\\x15\\xe9\\xf3\\xf0Z\\xbc@\\xb6\\x83\\x133p\\x17\\xc6c\\x87\\xa5\\xbbW\\xf9\\xec\\x8bz\\xa5\\xddv\\x89',)"}
+INFO : 2020-11-28 20:07:27,096 : use_cases.encryption.makeEncryptString : encryptedString : 24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34
+ZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX
+xmOHpbtX+eyLeqXddok=
+
+INFO : 2020-11-28 20:07:27,098 : routes.makeImageEncryptionRoutes (def encryptString) : {'encryptedString': "(b'\\xdb\\x8cCVs\\xdf\\x1e\\xdf\\x02\\x95\\xd8\\xb7\\xa6\\x1b&\\xbf\\x15\\xa5{\\xc9\\xcc/0]\\xf8\\xaf\\xa8\\x12\\xe5Z\\x15\\xc6\\xe4\\xa5\\x9a\\t\\xe2D\\x049\\x16/\\xafu\\xef\\xcd\\xdb\\xf6\\xac\\x86\\x90\\xf6\\xdc\\xc8\\n\\xdd\\xf8e\\xa5lPh\\x84\\xad\\xf1B\\xa4w\\x80\\xddo\\x96\\xa4\\xfa\\x06\\xb9V\\x8a\\xb5\\xb2\\x8e\\xc1\\x12y,mvd\\x9e\\xd4K\\x9aZ\\xe1|_\\x04\\x91\\x16\\xeb;\\x15\\xe9\\xf3\\xf0Z\\xbc@\\xb6\\x83\\x133p\\x17\\xc6c\\x87\\xa5\\xbbW\\xf9\\xec\\x8bz\\xa5\\xddv\\x89',)"}
+INFO : 2020-11-28 20:10:05,119 : use_cases.encryption.makeEncryptString : encryptedString as text with base64 encoding : 24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34
+ZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX
+xmOHpbtX+eyLeqXddok=
+
+INFO : 2020-11-28 20:10:05,124 : routes.makeImageEncryptionRoutes (def encryptString) : {'encryptedString': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 20:18:20,962 : routes.makeImageEncryptionRoutes (def encryptString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+ERROR : 2020-11-28 20:18:20,963 : routes.makeImageEncryptionRoutes (def encryptString) : name 'encryptedString' is not defined
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 23, in encryptString
+    decryptedString = use_cases.decryptString(base64StringEncrypted, encryptedString)
+NameError: name 'encryptedString' is not defined
+INFO : 2020-11-28 20:19:08,107 : routes.makeImageEncryptionRoutes (def encryptString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+ERROR : 2020-11-28 20:19:08,107 : routes.makeImageEncryptionRoutes (def encryptString) : name 'encryptedString' is not defined
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 23, in encryptString
+    decryptedString = use_cases.decryptString(base64StringEncrypted, encryptedString)
+NameError: name 'encryptedString' is not defined
+INFO : 2020-11-28 20:20:24,393 : routes.makeImageEncryptionRoutes (def encryptString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+ERROR : 2020-11-28 20:20:24,396 : routes.makeImageEncryptionRoutes (def encryptString) : name 'base64' is not defined
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 23, in encryptString
+    decryptedString = use_cases.decryptString(publicKey, base64StringEncrypted)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 6, in decryptString
+    encryptedBytes =  base64.decodebytes(base64StringEncrypted.encode('utf-8'))
+NameError: name 'base64' is not defined
+INFO : 2020-11-28 20:20:38,334 : routes.makeImageEncryptionRoutes (def encryptString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+ERROR : 2020-11-28 20:20:38,335 : routes.makeImageEncryptionRoutes (def encryptString) : Private key not available in this object
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 23, in encryptString
+    decryptedString = use_cases.decryptString(publicKey, base64StringEncrypted)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 8, in decryptString
+    decryptedString = priKey.decrypt(encryptedBytes)
+  File "/usr/lib/python3/dist-packages/Crypto/PublicKey/RSA.py", line 174, in decrypt
+    return pubkey.pubkey.decrypt(self, ciphertext)
+  File "/usr/lib/python3/dist-packages/Crypto/PublicKey/pubkey.py", line 93, in decrypt
+    plaintext=self._decrypt(ciphertext)
+  File "/usr/lib/python3/dist-packages/Crypto/PublicKey/RSA.py", line 239, in _decrypt
+    mp = self.key._decrypt(cp)
+TypeError: Private key not available in this object
+INFO : 2020-11-28 20:26:48,517 : routes.makeImageEncryptionRoutes (def encryptString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+ERROR : 2020-11-28 20:26:48,519 : routes.makeImageEncryptionRoutes (def encryptString) : name 'encryptedString' is not defined
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 26, in encryptString
+    return {'body' :  encryptedString}, 200
+NameError: name 'encryptedString' is not defined
+INFO : 2020-11-28 20:26:58,451 : routes.makeImageEncryptionRoutes (def encryptString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+ERROR : 2020-11-28 20:26:58,453 : routes.makeImageEncryptionRoutes (def encryptString) : name 'encryptedString' is not defined
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 26, in encryptString
+    return {'body' :  encryptedString}, 200
+NameError: name 'encryptedString' is not defined
+INFO : 2020-11-28 20:27:23,564 : routes.makeImageEncryptionRoutes (def encryptString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+ERROR : 2020-11-28 20:27:23,566 : routes.makeImageEncryptionRoutes (def encryptString) : Private key not available in this object
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 23, in encryptString
+    decryptedString = use_cases.decryptString(publicKey, base64StringEncrypted)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 8, in decryptString
+    decryptedString = priKey.decrypt(encryptedBytes)
+  File "/usr/lib/python3/dist-packages/Crypto/PublicKey/RSA.py", line 174, in decrypt
+    return pubkey.pubkey.decrypt(self, ciphertext)
+  File "/usr/lib/python3/dist-packages/Crypto/PublicKey/pubkey.py", line 93, in decrypt
+    plaintext=self._decrypt(ciphertext)
+  File "/usr/lib/python3/dist-packages/Crypto/PublicKey/RSA.py", line 239, in _decrypt
+    mp = self.key._decrypt(cp)
+TypeError: Private key not available in this object
+INFO : 2020-11-28 20:27:29,885 : routes.makeImageEncryptionRoutes (def encryptString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+ERROR : 2020-11-28 20:27:29,888 : routes.makeImageEncryptionRoutes (def encryptString) : name 'decryptedString' is not defined
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 23, in encryptString
+    decryptedString = use_cases.decryptString(publicKey, base64StringEncrypted)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+NameError: name 'decryptedString' is not defined
+INFO : 2020-11-28 20:27:38,482 : routes.makeImageEncryptionRoutes (def encryptString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+ERROR : 2020-11-28 20:27:38,483 : routes.makeImageEncryptionRoutes (def encryptString) : 'utf-8' codec can't decode byte 0xdf in position 5: invalid continuation byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 23, in encryptString
+    decryptedString = use_cases.decryptString(publicKey, base64StringEncrypted)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return encryptedBytes.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xdf in position 5: invalid continuation byte
+INFO : 2020-11-28 20:27:51,167 : routes.makeImageEncryptionRoutes (def encryptString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 20:28:01,855 : routes.makeImageEncryptionRoutes (def encryptString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 20:28:01,856 : use_cases.encryption.makeDecryptString : encryptedBytes : b'\xdb\x8cCVs\xdf\x1e\xdf\x02\x95\xd8\xb7\xa6\x1b&\xbf\x15\xa5{\xc9\xcc/0]\xf8\xaf\xa8\x12\xe5Z\x15\xc6\xe4\xa5\x9a\t\xe2D\x049\x16/\xafu\xef\xcd\xdb\xf6\xac\x86\x90\xf6\xdc\xc8\n\xdd\xf8e\xa5lPh\x84\xad\xf1B\xa4w\x80\xddo\x96\xa4\xfa\x06\xb9V\x8a\xb5\xb2\x8e\xc1\x12y,mvd\x9e\xd4K\x9aZ\xe1|_\x04\x91\x16\xeb;\x15\xe9\xf3\xf0Z\xbc@\xb6\x83\x133p\x17\xc6c\x87\xa5\xbbW\xf9\xec\x8bz\xa5\xddv\x89'
+INFO : 2020-11-28 20:28:37,763 : routes.makeImageEncryptionRoutes (def encryptString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 20:28:37,787 : use_cases.encryption.makeDecryptString : encryptedBytes : b'\xdb\x8cCVs\xdf\x1e\xdf\x02\x95\xd8\xb7\xa6\x1b&\xbf\x15\xa5{\xc9\xcc/0]\xf8\xaf\xa8\x12\xe5Z\x15\xc6\xe4\xa5\x9a\t\xe2D\x049\x16/\xafu\xef\xcd\xdb\xf6\xac\x86\x90\xf6\xdc\xc8\n\xdd\xf8e\xa5lPh\x84\xad\xf1B\xa4w\x80\xddo\x96\xa4\xfa\x06\xb9V\x8a\xb5\xb2\x8e\xc1\x12y,mvd\x9e\xd4K\x9aZ\xe1|_\x04\x91\x16\xeb;\x15\xe9\xf3\xf0Z\xbc@\xb6\x83\x133p\x17\xc6c\x87\xa5\xbbW\xf9\xec\x8bz\xa5\xddv\x89'
+INFO : 2020-11-28 20:28:52,472 : routes.makeImageEncryptionRoutes (def encryptString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 20:29:07,322 : routes.makeImageEncryptionRoutes (def encryptString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 20:38:52,610 : routes.makeImageEncryptionRoutes (def encryptString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 20:38:52,612 : routes.makeImageEncryptionRoutes (def encryptString) : {'decryptedString': 'This is cool. We are getting close!'}
+INFO : 2020-11-28 20:41:31,510 : routes.makeImageEncryptionRoutes (def encryptString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 20:41:31,515 : routes.makeImageEncryptionRoutes (def encryptString) : {'decryptedString': 'This is cool. We are getting close!'}
+INFO : 2020-11-28 20:42:05,736 : routes.makeImageEncryptionRoutes (def encryptString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 20:42:05,738 : routes.makeImageEncryptionRoutes (def encryptString) : {'decryptedString': 'This is cool. We are getting close!'}
+INFO : 2020-11-28 20:42:30,979 : routes.makeImageEncryptionRoutes (def encryptString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 20:42:30,981 : routes.makeImageEncryptionRoutes (def encryptString) : {'decryptedString': 'This is cool. We are getting close!'}
+INFO : 2020-11-28 20:42:45,465 : routes.makeImageEncryptionRoutes (def encryptString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 20:42:45,467 : routes.makeImageEncryptionRoutes (def encryptString) : {'decryptedString': 'This is cool. We are getting close!'}
+INFO : 2020-11-28 20:43:02,757 : routes.makeImageEncryptionRoutes (def encryptString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 20:43:02,759 : routes.makeImageEncryptionRoutes (def encryptString) : {'decryptedString': 'This is cool. We are getting close!'}
