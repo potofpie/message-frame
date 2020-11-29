@@ -1,4 +1,5 @@
 from Crypto.PublicKey import RSA
+from PIL import Image
 import Crypto
 import rsa
 from libs import * 
@@ -9,5 +10,9 @@ decryptString = makeDecryptString(Crypto, createLogger)
 encryptString = makeEncryptString(Crypto, createLogger)
 createKeyPair = makeCreateKeyPair(Crypto, createLogger)
 
-#imageEdit use_cases
+# use_cases.imageEdit.*
+from use_cases.imageEdit import makeWriteStringToImage, makeReadStringFromImage
+writeStringToImage = makeWriteStringToImage(Image, createLogger)
+readStringFromImage = makeReadStringFromImage(Image, createLogger)
+
 

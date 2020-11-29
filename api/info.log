@@ -624,3 +624,327 @@ INFO : 2020-11-28 20:42:45,465 : routes.makeImageEncryptionRoutes (def encryptSt
 INFO : 2020-11-28 20:42:45,467 : routes.makeImageEncryptionRoutes (def encryptString) : {'decryptedString': 'This is cool. We are getting close!'}
 INFO : 2020-11-28 20:43:02,757 : routes.makeImageEncryptionRoutes (def encryptString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
 INFO : 2020-11-28 20:43:02,759 : routes.makeImageEncryptionRoutes (def encryptString) : {'decryptedString': 'This is cool. We are getting close!'}
+INFO : 2020-11-28 22:43:15,815 : routes.makeImageEncryptionRoutes (def encryptString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 22:43:15,817 : routes.makeImageEncryptionRoutes (def encryptString) : {'decryptedString': 'This is cool. We are getting close!'}
+INFO : 2020-11-28 22:49:01,121 : routes.makeImageEncryptionRoutes (def encryptString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 22:49:01,125 : routes.makeImageEncryptionRoutes (def encryptString) : {'decryptedString': 'This is cool. We are getting close!'}
+ERROR : 2020-11-28 22:52:56,648 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : descriptor 'encode' requires a 'str' object but received a 'FileStorage'
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 39, in readWriteEncryptDecryptedString
+    img = use_cases.encryptString(image, string)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeEncryptString.py", line 5, in encryptString
+    pubKey = Crypto.PublicKey.RSA.importKey(str.encode(publicKey))
+TypeError: descriptor 'encode' requires a 'str' object but received a 'FileStorage'
+ERROR : 2020-11-28 22:53:48,349 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : module 'PIL' has no attribute 'Image'
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 39, in readWriteEncryptDecryptedString
+    img = use_cases.writeStringToImage(image, string)
+  File "/mnt/c/Code/message-frame/api/use_cases/imageEdit/makeWriteStringToImage.py", line 4, in writeStringToImage
+    messageImage = PIL.Image.open(rawImage.stream)
+AttributeError: module 'PIL' has no attribute 'Image'
+ERROR : 2020-11-28 22:56:40,658 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : module 'PIL' has no attribute 'open'
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 39, in readWriteEncryptDecryptedString
+    img = use_cases.writeStringToImage(image, string)
+  File "/mnt/c/Code/message-frame/api/use_cases/imageEdit/makeWriteStringToImage.py", line 4, in writeStringToImage
+    messageImage = Image.open(rawImage.stream)
+AttributeError: module 'PIL' has no attribute 'open'
+ERROR : 2020-11-28 22:56:49,989 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : module 'PIL' has no attribute 'open'
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 39, in readWriteEncryptDecryptedString
+    img = use_cases.writeStringToImage(image, string)
+  File "/mnt/c/Code/message-frame/api/use_cases/imageEdit/makeWriteStringToImage.py", line 4, in writeStringToImage
+    messageImage = Image.open(rawImage.stream)
+AttributeError: module 'PIL' has no attribute 'open'
+INFO : 2020-11-28 22:57:07,958 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 22:57:07,961 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'decryptedString': 'This is cool. We are getting close!'}
+INFO : 2020-11-28 23:19:01,589 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:36:09,740 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:36:09,831 : use_cases.imageEdit.makeWriteStringToImage : {'string being added to image: ': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+ERROR : 2020-11-28 23:36:10,062 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : 'PngImageFile' object has no attribute 'stream'
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 43, in readWriteEncryptDecryptedString
+    stringFromImage = use_cases.readStringFromImage(imgWithString)
+  File "/mnt/c/Code/message-frame/api/use_cases/imageEdit/makeReadStringFromImage.py", line 4, in readStringFromImage
+    messageImage = Image.open(imageWithString.stream)
+AttributeError: 'PngImageFile' object has no attribute 'stream'
+INFO : 2020-11-28 23:39:33,158 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:39:33,168 : use_cases.imageEdit.makeWriteStringToImage : {'string being added to image: ': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+ERROR : 2020-11-28 23:39:33,412 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : local variable 'decryptedString' referenced before assignment
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 43, in readWriteEncryptDecryptedString
+    logger.info({'type(imgWithString)' : str(decryptedString)})
+UnboundLocalError: local variable 'decryptedString' referenced before assignment
+INFO : 2020-11-28 23:40:05,023 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:40:05,031 : use_cases.imageEdit.makeWriteStringToImage : {'string being added to image: ': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+ERROR : 2020-11-28 23:40:05,254 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : local variable 'decryptedString' referenced before assignment
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 45, in readWriteEncryptDecryptedString
+    logger.info({'type(imgWithString)' : type(decryptedString)})
+UnboundLocalError: local variable 'decryptedString' referenced before assignment
+INFO : 2020-11-28 23:40:25,445 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:40:25,458 : use_cases.imageEdit.makeWriteStringToImage : {'string being added to image: ': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+ERROR : 2020-11-28 23:40:25,706 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : local variable 'decryptedString' referenced before assignment
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 43, in readWriteEncryptDecryptedString
+    logger.info({'type(imgWithString)' : type(decryptedString)})
+UnboundLocalError: local variable 'decryptedString' referenced before assignment
+INFO : 2020-11-28 23:40:37,723 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:40:37,731 : use_cases.imageEdit.makeWriteStringToImage : {'string being added to image: ': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:40:38,059 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'type(imgWithString)': <class 'PIL.PngImagePlugin.PngImageFile'>}
+INFO : 2020-11-28 23:40:38,060 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'type(image)': <class 'werkzeug.datastructures.FileStorage'>}
+ERROR : 2020-11-28 23:40:38,061 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : 'PngImageFile' object has no attribute 'stream'
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 47, in readWriteEncryptDecryptedString
+    stringFromImage = use_cases.readStringFromImage(imgWithString)
+  File "/mnt/c/Code/message-frame/api/use_cases/imageEdit/makeReadStringFromImage.py", line 4, in readStringFromImage
+    messageImage = Image.open(imageWithString.stream)
+AttributeError: 'PngImageFile' object has no attribute 'stream'
+INFO : 2020-11-28 23:43:02,939 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:43:02,951 : use_cases.imageEdit.makeWriteStringToImage : {'string being added to image: ': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:43:03,188 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'type(imgWithString)': <class 'PIL.PngImagePlugin.PngImageFile'>}
+INFO : 2020-11-28 23:43:03,189 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'type(image)': <class 'werkzeug.datastructures.FileStorage'>}
+INFO : 2020-11-28 23:43:03,190 : use_cases.imageEdit.makeReadStringFromImage : {'stringFromImage': ''}
+INFO : 2020-11-28 23:43:03,201 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'decryptedString': 'This is cool. We are getting close!'}
+INFO : 2020-11-28 23:45:02,987 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:45:02,997 : use_cases.imageEdit.makeWriteStringToImage : {'string being added to image: ': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:45:03,220 : use_cases.imageEdit.makeReadStringFromImage : {'stringFromImage': ''}
+INFO : 2020-11-28 23:45:03,220 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'stringFromImage': None}
+INFO : 2020-11-28 23:45:03,222 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'decryptedString': 'This is cool. We are getting close!'}
+INFO : 2020-11-28 23:48:04,226 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:48:04,233 : use_cases.imageEdit.makeWriteStringToImage : {'string being added to image: ': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:48:04,457 : use_cases.imageEdit.makeReadStringFromImage : {'stringFromImage': ''}
+INFO : 2020-11-28 23:48:04,458 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'stringFromImage': None}
+INFO : 2020-11-28 23:48:04,459 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'decryptedString': 'This is cool. We are getting close!'}
+INFO : 2020-11-28 23:49:24,651 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:49:24,662 : use_cases.imageEdit.makeWriteStringToImage : {'string being added to image: ': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:49:24,712 : use_cases.imageEdit.makeWriteStringToImage : {'len(stringAsList)': '175'}
+INFO : 2020-11-28 23:49:24,898 : use_cases.imageEdit.makeReadStringFromImage : {'stringFromImage': ''}
+INFO : 2020-11-28 23:49:24,899 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'stringFromImage': None}
+INFO : 2020-11-28 23:49:24,900 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'decryptedString': 'This is cool. We are getting close!'}
+INFO : 2020-11-28 23:51:03,010 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:51:03,020 : use_cases.imageEdit.makeWriteStringToImage : {'string being added to image: ': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:51:03,080 : use_cases.imageEdit.makeWriteStringToImage : {'len(stringAsList)': '175'}
+ERROR : 2020-11-28 23:51:03,276 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : string index out of range
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 45, in readWriteEncryptDecryptedString
+    stringFromImage = use_cases.readStringFromImage(imgWithString)
+  File "/mnt/c/Code/message-frame/api/use_cases/imageEdit/makeReadStringFromImage.py", line 10, in readStringFromImage
+    characterValue = ord(stringAsList[characterIndex])
+IndexError: string index out of range
+INFO : 2020-11-28 23:54:52,202 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:54:52,211 : use_cases.imageEdit.makeWriteStringToImage : {'string being added to image: ': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:54:52,257 : use_cases.imageEdit.makeWriteStringToImage : {'len(stringAsList)': '175'}
+INFO : 2020-11-28 23:54:52,439 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '2'}
+ERROR : 2020-11-28 23:54:52,440 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : local variable 'stringAsList' referenced before assignment
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 45, in readWriteEncryptDecryptedString
+    stringFromImage = use_cases.readStringFromImage(imgWithString)
+  File "/mnt/c/Code/message-frame/api/use_cases/imageEdit/makeReadStringFromImage.py", line 11, in readStringFromImage
+    stringAsList = stringAsList + chr(pixels[characterIndex+50,50][0])
+UnboundLocalError: local variable 'stringAsList' referenced before assignment
+INFO : 2020-11-28 23:55:47,265 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:55:47,274 : use_cases.imageEdit.makeWriteStringToImage : {'string being added to image: ': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:55:47,323 : use_cases.imageEdit.makeWriteStringToImage : {'len(stringAsList)': '175'}
+INFO : 2020-11-28 23:55:47,504 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '2'}
+INFO : 2020-11-28 23:55:47,504 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '4'}
+INFO : 2020-11-28 23:55:47,505 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'x'}
+INFO : 2020-11-28 23:55:47,506 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'D'}
+INFO : 2020-11-28 23:55:47,513 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'V'}
+INFO : 2020-11-28 23:55:47,513 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'n'}
+INFO : 2020-11-28 23:55:47,514 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'P'}
+INFO : 2020-11-28 23:55:47,514 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'f'}
+INFO : 2020-11-28 23:55:47,515 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'H'}
+INFO : 2020-11-28 23:55:47,515 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 't'}
+INFO : 2020-11-28 23:55:47,516 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '8'}
+INFO : 2020-11-28 23:55:47,516 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'C'}
+INFO : 2020-11-28 23:55:47,517 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'l'}
+INFO : 2020-11-28 23:55:47,517 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'd'}
+INFO : 2020-11-28 23:55:47,517 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'i'}
+INFO : 2020-11-28 23:55:47,518 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '3'}
+INFO : 2020-11-28 23:55:47,518 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'p'}
+INFO : 2020-11-28 23:55:47,518 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'h'}
+INFO : 2020-11-28 23:55:47,519 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 's'}
+INFO : 2020-11-28 23:55:47,519 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'm'}
+INFO : 2020-11-28 23:55:47,519 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'v'}
+INFO : 2020-11-28 23:55:47,520 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'x'}
+INFO : 2020-11-28 23:55:47,520 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'W'}
+INFO : 2020-11-28 23:55:47,521 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'l'}
+INFO : 2020-11-28 23:55:47,521 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'e'}
+INFO : 2020-11-28 23:55:47,521 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '8'}
+INFO : 2020-11-28 23:55:47,522 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'n'}
+INFO : 2020-11-28 23:55:47,522 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'M'}
+INFO : 2020-11-28 23:55:47,522 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'L'}
+INFO : 2020-11-28 23:55:47,523 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'z'}
+INFO : 2020-11-28 23:55:47,523 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'B'}
+INFO : 2020-11-28 23:55:47,523 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'd'}
+INFO : 2020-11-28 23:55:47,523 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '+'}
+INFO : 2020-11-28 23:55:47,524 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'K'}
+INFO : 2020-11-28 23:55:47,524 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '+'}
+INFO : 2020-11-28 23:55:47,524 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'o'}
+INFO : 2020-11-28 23:55:47,534 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'E'}
+INFO : 2020-11-28 23:55:47,535 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'u'}
+INFO : 2020-11-28 23:55:47,535 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'V'}
+INFO : 2020-11-28 23:55:47,536 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'a'}
+INFO : 2020-11-28 23:55:47,536 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'F'}
+INFO : 2020-11-28 23:55:47,537 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'c'}
+INFO : 2020-11-28 23:55:47,537 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'b'}
+INFO : 2020-11-28 23:55:47,538 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'k'}
+INFO : 2020-11-28 23:55:47,538 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'p'}
+INFO : 2020-11-28 23:55:47,538 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'Z'}
+INFO : 2020-11-28 23:55:47,539 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'o'}
+INFO : 2020-11-28 23:55:47,539 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'J'}
+INFO : 2020-11-28 23:55:47,539 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '4'}
+INFO : 2020-11-28 23:55:47,540 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'k'}
+INFO : 2020-11-28 23:55:47,541 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'Q'}
+INFO : 2020-11-28 23:55:47,541 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'E'}
+INFO : 2020-11-28 23:55:47,551 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'O'}
+INFO : 2020-11-28 23:55:47,552 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'R'}
+INFO : 2020-11-28 23:55:47,552 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'Y'}
+INFO : 2020-11-28 23:55:47,553 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'v'}
+INFO : 2020-11-28 23:55:47,553 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'r'}
+INFO : 2020-11-28 23:55:47,553 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '3'}
+INFO : 2020-11-28 23:55:47,554 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'X'}
+INFO : 2020-11-28 23:55:47,554 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'v'}
+INFO : 2020-11-28 23:55:47,554 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'z'}
+INFO : 2020-11-28 23:55:47,555 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'd'}
+INFO : 2020-11-28 23:55:47,555 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'v'}
+INFO : 2020-11-28 23:55:47,555 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '2'}
+INFO : 2020-11-28 23:55:47,556 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'r'}
+INFO : 2020-11-28 23:55:47,556 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'I'}
+INFO : 2020-11-28 23:55:47,557 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'a'}
+INFO : 2020-11-28 23:55:47,557 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'Q'}
+INFO : 2020-11-28 23:55:47,557 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '9'}
+INFO : 2020-11-28 23:55:47,559 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 't'}
+INFO : 2020-11-28 23:55:47,573 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'z'}
+INFO : 2020-11-28 23:55:47,574 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'I'}
+INFO : 2020-11-28 23:55:47,574 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'C'}
+INFO : 2020-11-28 23:55:47,585 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 't'}
+INFO : 2020-11-28 23:55:47,585 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '3'}
+INFO : 2020-11-28 23:55:47,586 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '4'}
+INFO : 2020-11-28 23:55:47,586 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '\n'}
+INFO : 2020-11-28 23:55:47,587 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'Z'}
+INFO : 2020-11-28 23:55:47,587 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'a'}
+INFO : 2020-11-28 23:55:47,588 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'V'}
+INFO : 2020-11-28 23:55:47,588 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 's'}
+INFO : 2020-11-28 23:55:47,589 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'U'}
+INFO : 2020-11-28 23:55:47,589 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'G'}
+INFO : 2020-11-28 23:55:47,590 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'i'}
+INFO : 2020-11-28 23:55:47,590 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'E'}
+INFO : 2020-11-28 23:55:47,590 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'r'}
+INFO : 2020-11-28 23:55:47,591 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'f'}
+INFO : 2020-11-28 23:55:47,591 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'F'}
+INFO : 2020-11-28 23:55:47,601 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'C'}
+INFO : 2020-11-28 23:55:47,602 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'p'}
+INFO : 2020-11-28 23:55:47,602 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'H'}
+INFO : 2020-11-28 23:55:47,603 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'e'}
+INFO : 2020-11-28 23:55:47,604 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'A'}
+INFO : 2020-11-28 23:55:47,604 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '3'}
+INFO : 2020-11-28 23:55:47,605 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'W'}
+INFO : 2020-11-28 23:55:47,605 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '+'}
+INFO : 2020-11-28 23:55:47,605 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'W'}
+INFO : 2020-11-28 23:55:47,606 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'p'}
+INFO : 2020-11-28 23:55:47,606 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'P'}
+INFO : 2020-11-28 23:55:47,607 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'o'}
+INFO : 2020-11-28 23:55:47,607 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'G'}
+INFO : 2020-11-28 23:55:47,607 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'u'}
+INFO : 2020-11-28 23:55:47,607 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'V'}
+INFO : 2020-11-28 23:55:47,608 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'a'}
+INFO : 2020-11-28 23:55:47,618 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'K'}
+INFO : 2020-11-28 23:55:47,619 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 't'}
+INFO : 2020-11-28 23:55:47,619 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'b'}
+INFO : 2020-11-28 23:55:47,619 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'K'}
+INFO : 2020-11-28 23:55:47,620 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'O'}
+INFO : 2020-11-28 23:55:47,620 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'w'}
+INFO : 2020-11-28 23:55:47,620 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'R'}
+INFO : 2020-11-28 23:55:47,621 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'J'}
+INFO : 2020-11-28 23:55:47,621 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '5'}
+INFO : 2020-11-28 23:55:47,621 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'L'}
+INFO : 2020-11-28 23:55:47,622 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'G'}
+INFO : 2020-11-28 23:55:47,622 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '1'}
+INFO : 2020-11-28 23:55:47,622 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '2'}
+INFO : 2020-11-28 23:55:47,623 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'Z'}
+INFO : 2020-11-28 23:55:47,623 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'J'}
+INFO : 2020-11-28 23:55:47,623 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '7'}
+INFO : 2020-11-28 23:55:47,624 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'U'}
+INFO : 2020-11-28 23:55:47,624 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'S'}
+INFO : 2020-11-28 23:55:47,624 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '5'}
+INFO : 2020-11-28 23:55:47,634 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'p'}
+INFO : 2020-11-28 23:55:47,635 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'a'}
+INFO : 2020-11-28 23:55:47,636 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '4'}
+INFO : 2020-11-28 23:55:47,636 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'X'}
+INFO : 2020-11-28 23:55:47,636 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'x'}
+INFO : 2020-11-28 23:55:47,637 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'f'}
+INFO : 2020-11-28 23:55:47,637 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'B'}
+INFO : 2020-11-28 23:55:47,638 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'J'}
+INFO : 2020-11-28 23:55:47,638 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'E'}
+INFO : 2020-11-28 23:55:47,638 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'W'}
+INFO : 2020-11-28 23:55:47,639 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '6'}
+INFO : 2020-11-28 23:55:47,639 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'z'}
+INFO : 2020-11-28 23:55:47,639 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 's'}
+INFO : 2020-11-28 23:55:47,640 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'V'}
+INFO : 2020-11-28 23:55:47,640 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '6'}
+INFO : 2020-11-28 23:55:47,640 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'f'}
+INFO : 2020-11-28 23:55:47,641 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'P'}
+INFO : 2020-11-28 23:55:47,641 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'w'}
+INFO : 2020-11-28 23:55:47,651 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'W'}
+INFO : 2020-11-28 23:55:47,651 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'r'}
+INFO : 2020-11-28 23:55:47,652 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'x'}
+INFO : 2020-11-28 23:55:47,653 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'A'}
+INFO : 2020-11-28 23:55:47,653 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 't'}
+INFO : 2020-11-28 23:55:47,653 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'o'}
+INFO : 2020-11-28 23:55:47,654 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'M'}
+INFO : 2020-11-28 23:55:47,654 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'T'}
+INFO : 2020-11-28 23:55:47,655 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'M'}
+INFO : 2020-11-28 23:55:47,655 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '3'}
+INFO : 2020-11-28 23:55:47,656 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'A'}
+INFO : 2020-11-28 23:55:47,656 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'X'}
+INFO : 2020-11-28 23:55:47,656 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '\n'}
+INFO : 2020-11-28 23:55:47,657 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'x'}
+INFO : 2020-11-28 23:55:47,657 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'm'}
+INFO : 2020-11-28 23:55:47,657 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'O'}
+INFO : 2020-11-28 23:55:47,658 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'H'}
+INFO : 2020-11-28 23:55:47,668 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'p'}
+INFO : 2020-11-28 23:55:47,668 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'b'}
+INFO : 2020-11-28 23:55:47,669 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 't'}
+INFO : 2020-11-28 23:55:47,669 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'X'}
+INFO : 2020-11-28 23:55:47,670 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '+'}
+INFO : 2020-11-28 23:55:47,670 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'e'}
+INFO : 2020-11-28 23:55:47,671 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'y'}
+INFO : 2020-11-28 23:55:47,671 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'L'}
+INFO : 2020-11-28 23:55:47,672 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'e'}
+INFO : 2020-11-28 23:55:47,672 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'q'}
+INFO : 2020-11-28 23:55:47,672 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'X'}
+INFO : 2020-11-28 23:55:47,673 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'd'}
+INFO : 2020-11-28 23:55:47,673 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'd'}
+INFO : 2020-11-28 23:55:47,673 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'o'}
+INFO : 2020-11-28 23:55:47,674 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': 'k'}
+INFO : 2020-11-28 23:55:47,674 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '='}
+INFO : 2020-11-28 23:55:47,675 : use_cases.imageEdit.makeReadStringFromImage : {'chr(pixels[characterIndex+50,50][0])': '\n'}
+INFO : 2020-11-28 23:55:47,685 : use_cases.imageEdit.makeReadStringFromImage : {'stringFromImage': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:55:47,685 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'stringFromImage': None}
+INFO : 2020-11-28 23:55:47,688 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'decryptedString': 'This is cool. We are getting close!'}
+INFO : 2020-11-28 23:55:55,188 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:55:55,199 : use_cases.imageEdit.makeWriteStringToImage : {'string being added to image: ': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:55:55,254 : use_cases.imageEdit.makeWriteStringToImage : {'len(stringAsList)': '175'}
+INFO : 2020-11-28 23:55:55,442 : use_cases.imageEdit.makeReadStringFromImage : {'stringFromImage': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:55:55,443 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'stringFromImage': None}
+INFO : 2020-11-28 23:55:55,445 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'decryptedString': 'This is cool. We are getting close!'}
+INFO : 2020-11-28 23:57:27,119 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'base64StringEncrypted': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:57:27,132 : use_cases.imageEdit.makeWriteStringToImage : {'string being added to image: ': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:57:27,186 : use_cases.imageEdit.makeWriteStringToImage : {'len(stringAsList)': '175'}
+INFO : 2020-11-28 23:57:27,373 : use_cases.imageEdit.makeReadStringFromImage : {'stringFromImage': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:57:27,374 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'stringFromImage': '24xDVnPfHt8Cldi3phsmvxWle8nMLzBd+K+oEuVaFcbkpZoJ4kQEORYvr3Xvzdv2rIaQ9tzICt34\nZaVsUGiErfFCpHeA3W+WpPoGuVaKtbKOwRJ5LG12ZJ7US5pa4XxfBJEW6zsV6fPwWrxAtoMTM3AX\nxmOHpbtX+eyLeqXddok=\n'}
+INFO : 2020-11-28 23:57:27,387 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'decryptedString': 'This is cool. We are getting close!'}
+INFO : 2020-11-28 23:57:58,513 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'base64StringEncrypted': 'pndPWYZYa1K3fwp6TYatr1KPCeSAFh6s2PbgntYBhMvrPGUqUwq71at3wk/I4j93FLJpJbQbzlNi\ncQYYb56sXIAIZQXX/LxWgcw8FraawwK3wlhoY6JCqLivggCiXb0EJ+Pn2JVJYyfQl+Bfu3oE+TVw\nMVaxgLAOdx0Tk/tQ48I=\n'}
+INFO : 2020-11-28 23:57:58,513 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'base64StringEncrypted': 'pndPWYZYa1K3fwp6TYatr1KPCeSAFh6s2PbgntYBhMvrPGUqUwq71at3wk/I4j93FLJpJbQbzlNi\ncQYYb56sXIAIZQXX/LxWgcw8FraawwK3wlhoY6JCqLivggCiXb0EJ+Pn2JVJYyfQl+Bfu3oE+TVw\nMVaxgLAOdx0Tk/tQ48I=\n'}
+INFO : 2020-11-28 23:57:58,515 : use_cases.imageEdit.makeWriteStringToImage : {'string being added to image: ': 'pndPWYZYa1K3fwp6TYatr1KPCeSAFh6s2PbgntYBhMvrPGUqUwq71at3wk/I4j93FLJpJbQbzlNi\ncQYYb56sXIAIZQXX/LxWgcw8FraawwK3wlhoY6JCqLivggCiXb0EJ+Pn2JVJYyfQl+Bfu3oE+TVw\nMVaxgLAOdx0Tk/tQ48I=\n'}
+INFO : 2020-11-28 23:57:58,515 : use_cases.imageEdit.makeWriteStringToImage : {'string being added to image: ': 'pndPWYZYa1K3fwp6TYatr1KPCeSAFh6s2PbgntYBhMvrPGUqUwq71at3wk/I4j93FLJpJbQbzlNi\ncQYYb56sXIAIZQXX/LxWgcw8FraawwK3wlhoY6JCqLivggCiXb0EJ+Pn2JVJYyfQl+Bfu3oE+TVw\nMVaxgLAOdx0Tk/tQ48I=\n'}
+INFO : 2020-11-28 23:57:58,560 : use_cases.imageEdit.makeWriteStringToImage : {'len(stringAsList)': '175'}
+INFO : 2020-11-28 23:57:58,560 : use_cases.imageEdit.makeWriteStringToImage : {'len(stringAsList)': '175'}
+INFO : 2020-11-28 23:57:58,742 : use_cases.imageEdit.makeReadStringFromImage : {'stringFromImage': 'pndPWYZYa1K3fwp6TYatr1KPCeSAFh6s2PbgntYBhMvrPGUqUwq71at3wk/I4j93FLJpJbQbzlNi\ncQYYb56sXIAIZQXX/LxWgcw8FraawwK3wlhoY6JCqLivggCiXb0EJ+Pn2JVJYyfQl+Bfu3oE+TVw\nMVaxgLAOdx0Tk/tQ48I=\n'}
+INFO : 2020-11-28 23:57:58,742 : use_cases.imageEdit.makeReadStringFromImage : {'stringFromImage': 'pndPWYZYa1K3fwp6TYatr1KPCeSAFh6s2PbgntYBhMvrPGUqUwq71at3wk/I4j93FLJpJbQbzlNi\ncQYYb56sXIAIZQXX/LxWgcw8FraawwK3wlhoY6JCqLivggCiXb0EJ+Pn2JVJYyfQl+Bfu3oE+TVw\nMVaxgLAOdx0Tk/tQ48I=\n'}
+INFO : 2020-11-28 23:57:58,745 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'stringFromImage': 'pndPWYZYa1K3fwp6TYatr1KPCeSAFh6s2PbgntYBhMvrPGUqUwq71at3wk/I4j93FLJpJbQbzlNi\ncQYYb56sXIAIZQXX/LxWgcw8FraawwK3wlhoY6JCqLivggCiXb0EJ+Pn2JVJYyfQl+Bfu3oE+TVw\nMVaxgLAOdx0Tk/tQ48I=\n'}
+INFO : 2020-11-28 23:57:58,745 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'stringFromImage': 'pndPWYZYa1K3fwp6TYatr1KPCeSAFh6s2PbgntYBhMvrPGUqUwq71at3wk/I4j93FLJpJbQbzlNi\ncQYYb56sXIAIZQXX/LxWgcw8FraawwK3wlhoY6JCqLivggCiXb0EJ+Pn2JVJYyfQl+Bfu3oE+TVw\nMVaxgLAOdx0Tk/tQ48I=\n'}
+INFO : 2020-11-28 23:57:58,748 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'decryptedString': 'This is cool. We are getting close!!'}
+INFO : 2020-11-28 23:57:58,748 : routes.makeImageEncryptionRoutes (def readWriteEncryptDecryptedString) : {'decryptedString': 'This is cool. We are getting close!!'}
