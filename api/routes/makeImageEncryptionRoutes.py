@@ -1,4 +1,6 @@
 import base64
+from io import BytesIO
+
 def makeImageEncryptionRoutes(libs,use_cases,json,flask,app,path):
     @app.route(f'{path}/createKeyPair', methods=['GET'])
     def createKeyPair():
@@ -52,6 +54,63 @@ def makeImageEncryptionRoutes(libs,use_cases,json,flask,app,path):
         except Exception as error:
             logger.exception(error)
             return {'body': str(error)}, 400
+
+    @app.route(f'{path}/createMessageImage', methods=['POST'])
+    def createMessageImage():
+        try:
+            logger = libs.createLogger(f'{__name__} (def createMessageImage)')
+            data = flask.request.form
+            files = flask.request.files
+            string, publicKey, privateKey = [data['string'], data['public'], data['private']]
+            image, messageImage  = [files['image'],files['messageImage']]
+
+            base64StringEncrypted = use_cases.encryptString(publicKey, string)
+            logger.info({'base64StringEncrypted' : str(base64StringEncrypted)})
+            imgWithString = use_cases.writeStringToImage(image, base64StringEncrypted)
+
+            img_io = BytesIO()
+            imgWithString.save(img_io, 'PNG', quality=70)
+            img_io.seek(0)
+            
+            
+            
+            # stringFromImage = use_cases.readStringFromImage(imgWithString)
+            # logger.info({'stringFromImage' : stringFromImage})
+
+            # decryptedString = use_cases.decryptString(privateKey, stringFromImage)
+            # logger.info({'decryptedString' : str(decryptedString)})
+
+            return flask.send_file(img_io, mimetype='image/png')
+            # return {'body' :  [imgWithString.height, imgWithString.width]}, 200
+        except Exception as error:
+            logger.exception(error)
+            return {'body': str(error)}, 400
+    @app.route(f'{path}/readMessageImage', methods=['POST'])
+    def readMessageImage():
+        try:
+            logger = libs.createLogger(f'{__name__} (def createMessageImage)')
+            data = flask.request.form
+            files = flask.request.files
+            string, publicKey, privateKey = [data['string'], data['public'], data['private']]
+            image, messageImage  = [files['image'],files['messageImage']]
+
+            # base64StringEncrypted = use_cases.encryptString(publicKey, string)
+            # logger.info({'base64StringEncrypted' : str(base64StringEncrypted)})
+            # imgWithString = use_cases.writeStringToImage(image, base64StringEncrypted)
+            
+            
+            
+            stringFromImage = use_cases.readStringFromImage(messageImage)
+            logger.info({'stringFromImage' : stringFromImage})
+
+            decryptedString = use_cases.decryptString(privateKey, stringFromImage)
+            logger.info({'decryptedString' : str(decryptedString)})
+
+            return {'body' : decryptedString}, 200
+        except Exception as error:
+            logger.exception(error)
+            return {'body': str(error)}, 400
+
 
 
 

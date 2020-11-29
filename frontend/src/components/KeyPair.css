@@ -1,0 +1,17 @@
+.key-section {
+  text-align: center;
+  background-color: #1a1a1a;
+  min-height: 100vh;
+  display: flex;
+
+  flex-direction: row;
+  align-items:flex-start;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.small-info {
+  color: #fff;
+  font-size: 12px;
+  margin: 0px;
+}

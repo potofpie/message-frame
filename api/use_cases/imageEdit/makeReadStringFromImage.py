@@ -1,8 +1,8 @@
 def makeReadStringFromImage(Image, createLogger):
     def readStringFromImage(imageWithString):
         logger = createLogger(__name__)
-        messageImage = imageWithString
-        # messageImage = Image.open(imageWithString.stream)
+        # messageImage = imageWithString
+        messageImage = Image.open(imageWithString.stream)
         pixels = messageImage.load()
 
         stringFromImage = '' 
