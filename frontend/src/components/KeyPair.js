@@ -12,7 +12,7 @@ function KeyPair(props) {
                 mode="java"
                 theme="monokai"
                 name="UNIQUE_ID_OF_DIV"
-                height='225px'
+                height='240px'
                 value={String(props.keyPair['public'])}
                 editorProps={{ $blockScrolling: true }}
                 />
@@ -23,7 +23,7 @@ function KeyPair(props) {
                     mode="java"
                     theme="monokai"
                     name="UNIQUE_ID_OF_DIV"
-                    height='225px'
+                    height='240px'
                     value={String(props.keyPair['private'])}
                     editorProps={{ $blockScrolling: true }}
                     />

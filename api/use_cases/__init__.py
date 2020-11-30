@@ -3,12 +3,13 @@ from PIL import Image
 import Crypto
 import rsa
 from libs import * 
+import time
 
 # use_cases.encryption.*
 from use_cases.encryption import makeDecryptString, makeEncryptString, makeCreateKeyPair
 decryptString = makeDecryptString(Crypto, createLogger)
 encryptString = makeEncryptString(Crypto, createLogger)
-createKeyPair = makeCreateKeyPair(Crypto, createLogger)
+createKeyPair = makeCreateKeyPair(time, Crypto, createLogger)
 
 # use_cases.imageEdit.*
 from use_cases.imageEdit import makeWriteStringToImage, makeReadStringFromImage

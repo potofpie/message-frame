@@ -1,12 +1,19 @@
 import './App.css';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-import KeyPair from './components/KeyPair'
-import CircleBoi from './components/CircleBoi'
+
+
+import KeyPair from './components/KeyPair';
+import CircleBoi from './components/CircleBoi';
+import ActionButtons from './components/ActionButtons';
+import FileUpload from './components/FileUpload';
+import SecretFile from './resources/secret-file.png';
+
 
 
 function App() {
   const [keyPair, setKeyPair] = useState(null);
+
   useEffect(() => {
       axios.get(`http://localhost:5000/api/imageEncryption/createKeyPair`)
         .then(res => {
@@ -15,22 +22,23 @@ function App() {
           keyPair === null ? setKeyPair(data['body']) : console.log('something');
         })
   });
+  
   return (
     <div className="App">
-   
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
       <div className="App-header">
-          message-frame
+          <img src={SecretFile} className="App-logo" alt="logo" />
+          <div>message-frame</div>
+          <p>
+            A quick and simple way to hide encrypted messages in a image!
+          </p>
       </div>
-        <p>
-          A quick and simple way to hide encrypted messages in a image!
-        </p>
+      <div className='App-body'>
+        {keyPair === null ? <CircleBoi/> : <KeyPair keyPair={keyPair}/>}
+
+        <FileUpload/>
+        <ActionButtons/>
         
-        {/* <CircleBoi/> */}
-       {/* <button> dlsjflksjdfklj </button> */}
-       {keyPair === null ? <CircleBoi/> : <KeyPair keyPair={keyPair}/>}
-        
-        
+      </div>
     </div>
   );
 }
