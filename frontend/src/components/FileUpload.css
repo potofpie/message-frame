@@ -1,5 +1,30 @@
 .FileUpload-container {
     color: #fff;
     width: 100%;
+    display: flex;
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* margin: 15px; */
+    border: 1px dashed #ffff80;
+    max-width: 1030px;
+    margin-top: 25px
+  }
+  
+@media screen and (max-width: 1000px) {
+  .FileUpload-container  {
+    width: 500px;
+    
+  }
+}
+
+.FileUpload-link {
+  display:'none';
+  }
+
+.FileUpload-link:hover {
+    color: #ffff80;
   }
   
