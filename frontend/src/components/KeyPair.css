@@ -10,11 +10,12 @@
 
 .key-section {
   display: flex;
-  flex: 1;
+  flex: 3;
   flex-direction: row;
   text-align: center;
+  
   justify-content: space-evenly;
-  align-items:flex-start;
+  align-items: center ;
   
   width: 100%;
   max-width: 1100px;

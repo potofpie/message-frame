@@ -1,18 +1,35 @@
 .FileUpload-container {
     color: #fff;
-    width: 100%;
+    border: 1px dashed #ffff80;
+    background-color: #272822;
+    
     display: flex;
-    flex: 1;
+    flex: 2;
+
     text-align: center;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* margin: 15px; */
-    border: 1px dashed #ffff80;
+    
+    
+    
+    width: 100%;
     max-width: 1030px;
     margin-top: 25px
   }
-  
+
+.FileUpload-preview {
+  height: 100px;
+}
+
+.FileUpload-previewg {
+  -webkit-transform: scale(0.3); /* Saf3.1+, Chrome */
+  -moz-transform: scale(0.3); /* FF3.5+ */
+  -ms-transform: scale(0.3); /* IE9 */
+}
+
+
+
 @media screen and (max-width: 1000px) {
   .FileUpload-container  {
     width: 500px;
