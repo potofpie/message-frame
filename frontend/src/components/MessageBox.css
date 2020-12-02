@@ -14,15 +14,14 @@
 
 
   width: 100%;
-  max-width: 1030px;
+  max-width: 900px;
   height: 25px;
-  margin: 10px;
   
   color: #fff;
   background-color: #272822;
   border: 1px solid #ffff80;
   font-family: 'Source Code Pro', monospace;
-  
+  border-radius: 4px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -33,6 +32,9 @@
 
 @media screen and (max-width: 1000px) {
   .MessageBox-input{
-    width: 500px;
+    width: 400px;
+  }
+  .MessageBox-container {
+    width: 400px;
   }
 }

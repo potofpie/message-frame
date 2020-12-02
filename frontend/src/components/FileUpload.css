@@ -1,45 +1,58 @@
 .FileUpload-container {
+
+    display: flex;
+    flex: 2;
+    
+    width: 100%;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .FileUpload-object-container {
     color: #fff;
     border: 1px dashed #ffff80;
     background-color: #272822;
     
     display: flex;
-    flex: 2;
+    /* flex: 1; */
+    height: 75%;
 
     text-align: center;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     
-    
-    
     width: 100%;
-    max-width: 1030px;
-    margin-top: 25px
+    max-width: 900px;
   }
 
+  
 .FileUpload-preview {
-  height: 100px;
+  flex: 1;
 }
 
-.FileUpload-previewg {
-  -webkit-transform: scale(0.3); /* Saf3.1+, Chrome */
-  -moz-transform: scale(0.3); /* FF3.5+ */
-  -ms-transform: scale(0.3); /* IE9 */
-}
 
 
 
 @media screen and (max-width: 1000px) {
-  .FileUpload-container  {
-    width: 500px;
-    
+  .FileUpload-object-container  {
+    height: 100px;
+    width: 400px;
+  }
+  .FileUpload-container {
+    width: 400px;
   }
 }
 
+
 .FileUpload-link {
-  display:'none';
-  }
+  font-family: 'Source Code Pro', monospace;
+  
+}
+
 
 .FileUpload-link:hover {
     color: #ffff80;

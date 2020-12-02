@@ -8,6 +8,7 @@ import CircleBoi from './components/CircleBoi';
 import ActionButtons from './components/ActionButtons';
 import FileUpload from './components/FileUpload';
 import MessageBox from './components/MessageBox';
+import RadioButton from './components/RadioButton';
 // import SecretFile from './resources/secret-file.png';
 
 
@@ -17,6 +18,7 @@ function App() {
   const [file, setFile]  = useState(null);
   const [message, setMessage]  = useState(null);
   const [newImage, setNewImage]  = useState(null);
+  const [keyType, setKeyType]  = useState('public');
 
 
 
@@ -57,7 +59,7 @@ function App() {
           {/* <img src={SecretFile} className="App-logo" alt="logo" /> */}
           <div>message-frame</div>
           <p>
-            A quick and simple way to hide encrypted messages in a image
+            A quick and simple way to hide encrypted messages in a image.
           </p>
       </div>
       <div className='App-body'>
@@ -66,6 +68,7 @@ function App() {
           <CircleBoi /> 
           : 
           <> 
+            <RadioButton keyType={keyType} setKeyType={setKeyType}/>
             <MessageBox setMessage={setMessage}/>
             <KeyPair keyPair={keyPair}/>
             <FileUpload setFile={setFile} file={file} />

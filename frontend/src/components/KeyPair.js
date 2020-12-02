@@ -5,28 +5,34 @@ import "./KeyPair.css"
 
 function KeyPair(props) {
   return (
-        <div className="key-section">
-            <div className='key'>
-                <p className='small-info'>Public Key</p>
-                <AceEditor
-                mode="java"
-                theme="monokai"
-                name="UNIQUE_ID_OF_DIV"
-                height='240px'
-                value={String(props.keyPair['public'])}
-                editorProps={{ $blockScrolling: true }}
-                />
-            </div>
-            <div className='key'>
-                <p className='small-info'>Private Key</p>
-                <AceEditor
+        <div className="KeyPair-container">
+            <div className='KeyPair-object-container '>
+                <div className='KeyPair-key'>
+                    <p className='KeyPair-small-info'>Public Key</p>
+                    <AceEditor
                     mode="java"
                     theme="monokai"
                     name="UNIQUE_ID_OF_DIV"
-                    height='240px'
-                    value={String(props.keyPair['private'])}
+                    showGutter={false} 
+                    height='190px'
+                    width ='395px'
+                    value={String(props.keyPair['public'])}
                     editorProps={{ $blockScrolling: true }}
                     />
+                </div>
+                <div className='KeyPair-key'>
+                    <p className='KeyPair-small-info'>Private Key</p>
+                    <AceEditor
+                        mode="java"
+                        theme="monokai"
+                        name="UNIQUE_ID_OF_DIV"
+                        height='190px'
+                        width ='395px'
+                        showGutter={false}
+                        value={String(props.keyPair['private'])}
+                        editorProps={{ $blockScrolling: true }}
+                        />
+                </div>
             </div>
         </div>
   );

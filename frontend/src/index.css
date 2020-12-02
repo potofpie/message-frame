@@ -12,6 +12,12 @@ html, body, #root {
     
 }
 
+@media screen and (max-width: 1000px) {
+  html, body, #root {  
+    height: 110vh;
+  }
+}
+
 ::-moz-selection { /* Code for Firefox */
   color: black;
   background: #fff;
