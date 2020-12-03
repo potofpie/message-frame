@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "8df615c7-dda8-4393-bcd3-0795891b1648",
+		"name": "Message Frame",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}:{{PORT}}/",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create key pair",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"string\" : \"This is cool. We are getting close!\",\r\n    \"publicKey\" : \"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDZsxmq7sNaVLmIzILRzCl1kzZBCd+4cVRBg3Eav+rt9/hSHoieuWogaZ5t24CLy8sEwkhv7rFedO6s3rykLQiYQJy7hOQHmEhxOMtCDJjIhh+zV52z0LPCbzfy4hCPWsHYKqFMTZ8w4Sf4Nep5gp6FGljGIgYQuBpU2h+rcVLppprIrx5h1PkIm24TtzfpHhuOldGFBmErNN1COzIisFfDfJuJw3V88vR9ndMof9AW90pUz4mV5T/zswZ/X6w7KxBhgHnz6GL3896S2zazZirsblYllRL3nhEb7LziYYgKmO7ukRBhm5iZz1P2LKO3eswkhyrySvQrdsXA8KY4fyKv bobby@DESKTOP-K8S7GRL\",\r\n    \"privateKey\" : \"-----BEGIN RSA PRIVATE KEY----- //MIIEpQIBAAKCAQEA2bMZqu7DWlS5iMyC0cwpdZM2QQnfuHFUQYNxGr/q7ff4Uh6I //nrlqIGmebduAi8vLBMJIb+6xXnTurN68pC0ImECcu4TkB5hIcTjLQgyYyIYfs1ed //s9Czwm838uIQj1rB2CqhTE2fMOEn+DXqeYKehRpYxiIGELgaVNofq3FS6aaayK8e //YdT5CJtuE7c36R4bjpXRhQZhKzTdQjsyIrBXw3ybicN1fPL0fZ3TKH/QFvdKVM+J //leU/87MGf1+sOysQYYB58+hi9/Pekts2s2Yq7G5WJZUS954RG+y84mGICpju7pEQ //YZuYmc9T9iyjt3rMJIcq8kr0K3bFwPCmOH8irwIDAQABAoIBAQCoS3TEV+BdrLHh //t3hKh/JlGnEOxntVMwdXvi1p6IPNg61Mjp4/Vkdc10nK064EZH+GJkupfHVR+EOr //EGX05XuHeCuyK4G8/VTDcoxvex2Bp25KTqlzoRvWa/Rsp6b1q8u/OPWI71jpiKZF //lCi31uqFK2EFirf1pN12S0nAV9MpHF1jpApMq05HqqHPxHL4yWCk74Fy4M+KCpYW ///1ymf3fF0k6FOnZH21XiZlc6lsnr/9WIb2T3IZMJUJLq1Qu2nwbUAY8od5W0HK98 //0BWNCX0lMwMyYa8i3PJgypiYi1mf0xQawbvUNPjqZoVZ4HtsV/kLbeDI/gwNCpEL //6CqbL7QBAoGBAPnoGgTh3lEtV9EfDPM34tU27dhyhmfEqvnVSF8Lc98KifqXuidI //CD7UrDZWQMda/2u0PGbOy4M8pimdmzdwtP/pTyRGdX+i9UeGZWRFjQE/T+8dDDY1 //sE7ZIpHk+cZnPdemgceb95vy710e4TT85Yxmp+qzFw56PSxx8o8HUTXBAoGBAN8B //9vl7Kk02dEZwIFSiDQX/SlIScrQFG6dZRntsd8f3MF+VYacgQJ7Kt1rD3Zdp+y01 //Y1QPoImbBMwWzYSy9iNKl+moFC+NK68iIRVDXk5EDuDCvVLuk2L0V/cmx1ikoCeA //irQQyIDrb3e/nhyQhpasvPNoew6VvoUazNJ/BdRvAoGBAJvO1coNeKpr9sBu94f8 //Y/RDFu9IF/xCZcb17vUzEr8Qtw4B4xHymxFxTx1hkWm5ll30NWRzsfbUrVRs6wUZ //w/952tnnBALb+sjpRfXKVytb6d5O4fo6Zv4B6sfDVucYHzqAmZF18F7Oi+YnBooe //0o9CwZZWqh1goRtAv9Xk3gEBAoGAQomxiOqIypTuyH14CAh53ko3gJlkg/XqNFpc //v0Kz0oQceMh3ZIgo/7f4USqTmTPT7784LcKj4arRGZvMIkXLTuhYvyyZKT7zw8Np //H5EEOFHyJnm0R2RLsYC6JlH5tKcZ6e9ecy92w5B7p70Sje9JWPedQPrxjH59Y/WF //G2Eu+h0CgYEAi1xaUfK11bhrgPSEhglvoCItvfVRtWQn9dMZX/x0E814b4nRV1lp //rH+et/m+Sm5mTVAv4Gqa7jhS1BUYdZ2fpMi89bUSI3wQmdQFH1W3Crq2UmdgXxWO //GwDVOyU33+oVkDQ6YQGzmMiZQQ4OBzt2uNMFEyFeSYaDtv8j8wAGEPk= //-----END RSA PRIVATE KEY----- //\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}:{{PORT}}/api/imageEncryption/createKeyPair",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"api",
+						"imageEncryption",
+						"createKeyPair"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createMessageImage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "string",
+							"value": "Hi Anja. How was work?!?!",
+							"type": "text"
+						},
+						{
+							"key": "private",
+							"value": "-----BEGIN RSA PRIVATE KEY-----\nMIICWwIBAAKBgQDoLYTdkMMdX4S3N7PsXsxZk9l14iC7b0OVAIFbQYOE0Pj/guSg\nuKI7JdkqO213pJhUmZunsF19crzylRLreGjHFT36TWoWue+/D8ABRIavWDd5RST9\nAIO2dUuHN76Pp1jlDAAuPWG18cSDSr4cfVA2uZP+IBJqckNhVwqQXr72aQIDAQAB\nAoGAAQ5D7mX8HSQUDGk6bja4Iygi8wBGOdP1sLXB4NJZcL8qgq7rrzdntXEknaaL\nhuG+t5PDO2333twos8mtvlhb0Zm1XEtXeZsBdCPoDnLBkOgE+orvpZkSXsDS+eRq\nZu+MSomjFEjmwuZ4j4Fw75yQXMsnxiOQ0UDRebeha0bKbSkCQQDt1zLaiW6i/ZU+\n4dS3AX1HU12bOvKxfEEnPOp84XhtDdiykiQgW78rl1hxNpy+07fdrYN1IQwL8fwl\nWT9QtvfzAkEA+eeiw9PQ6V1rp3bINCps1pLfmknL1snBmCs0cnMf3HXtfB8SuHk/\nmEAWOxUy27d2rr3Zu01xnKv+3/b69/NrMwJAF6PWKCaU2pp95RwpOm9pdldw7Gb1\njHKfPzkszXDTuXMw4L7p3FWCMOEAJ3CYL9d3ZQ9EC7ZXLjDFMSknw+wLxQJAYZk4\ndRh1X56Pm8CFIfJrvUVxNHWbuU/kXsSI4CXcDKK11CLikc8wqgplZD+8NBkrrcUR\nktgFBfYaPWfczhdwBwJADv/PqqB9V/4T7BF1EsCBIYVgxWoUOCjkXlPWzZwbK0fY\nIhWdTOyQVChoNQ7jhE50PY1a351F08vYf4t5VkNafQ==\n-----END RSA PRIVATE KEY-----",
+							"type": "text"
+						},
+						{
+							"key": "public",
+							"value": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDoLYTdkMMdX4S3N7PsXsxZk9l1\n4iC7b0OVAIFbQYOE0Pj/guSguKI7JdkqO213pJhUmZunsF19crzylRLreGjHFT36\nTWoWue+/D8ABRIavWDd5RST9AIO2dUuHN76Pp1jlDAAuPWG18cSDSr4cfVA2uZP+\nIBJqckNhVwqQXr72aQIDAQAB\n-----END PUBLIC KEY-----",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Code/message-frame/resources/pictures/meme_sample.jpg"
+						},
+						{
+							"key": "messageImage",
+							"type": "file",
+							"src": []
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}:{{PORT}}/api/imageEncryption/createMessageImage",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"api",
+						"imageEncryption",
+						"createMessageImage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "readMessageImage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "string",
+							"value": "This is cool. We are getting close!",
+							"type": "text"
+						},
+						{
+							"key": "private",
+							"value": "-----BEGIN RSA PRIVATE KEY-----\nMIICWwIBAAKBgQDoLYTdkMMdX4S3N7PsXsxZk9l14iC7b0OVAIFbQYOE0Pj/guSg\nuKI7JdkqO213pJhUmZunsF19crzylRLreGjHFT36TWoWue+/D8ABRIavWDd5RST9\nAIO2dUuHN76Pp1jlDAAuPWG18cSDSr4cfVA2uZP+IBJqckNhVwqQXr72aQIDAQAB\nAoGAAQ5D7mX8HSQUDGk6bja4Iygi8wBGOdP1sLXB4NJZcL8qgq7rrzdntXEknaaL\nhuG+t5PDO2333twos8mtvlhb0Zm1XEtXeZsBdCPoDnLBkOgE+orvpZkSXsDS+eRq\nZu+MSomjFEjmwuZ4j4Fw75yQXMsnxiOQ0UDRebeha0bKbSkCQQDt1zLaiW6i/ZU+\n4dS3AX1HU12bOvKxfEEnPOp84XhtDdiykiQgW78rl1hxNpy+07fdrYN1IQwL8fwl\nWT9QtvfzAkEA+eeiw9PQ6V1rp3bINCps1pLfmknL1snBmCs0cnMf3HXtfB8SuHk/\nmEAWOxUy27d2rr3Zu01xnKv+3/b69/NrMwJAF6PWKCaU2pp95RwpOm9pdldw7Gb1\njHKfPzkszXDTuXMw4L7p3FWCMOEAJ3CYL9d3ZQ9EC7ZXLjDFMSknw+wLxQJAYZk4\ndRh1X56Pm8CFIfJrvUVxNHWbuU/kXsSI4CXcDKK11CLikc8wqgplZD+8NBkrrcUR\nktgFBfYaPWfczhdwBwJADv/PqqB9V/4T7BF1EsCBIYVgxWoUOCjkXlPWzZwbK0fY\nIhWdTOyQVChoNQ7jhE50PY1a351F08vYf4t5VkNafQ==\n-----END RSA PRIVATE KEY-----",
+							"type": "text"
+						},
+						{
+							"key": "public",
+							"value": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDoLYTdkMMdX4S3N7PsXsxZk9l1\n4iC7b0OVAIFbQYOE0Pj/guSguKI7JdkqO213pJhUmZunsF19crzylRLreGjHFT36\nTWoWue+/D8ABRIavWDd5RST9AIO2dUuHN76Pp1jlDAAuPWG18cSDSr4cfVA2uZP+\nIBJqckNhVwqQXr72aQIDAQAB\n-----END PUBLIC KEY-----",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Bobby Christopher/OneDrive/Desktop/SomethingSomethingSoupSomethingLogo.png"
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}:{{PORT}}/api/imageEncryption/readMessageImage",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"api",
+						"imageEncryption",
+						"readMessageImage"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
