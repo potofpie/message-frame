@@ -4,6 +4,13 @@
   overflow: hidden;
 }
 
+.KeyPair-key-highlighted {
+  border: 1px solid #ffff80;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px 10px rgba(255, 255, 128,0.2);
+}
+
 .KeyPair-small-info {
   margin: 0px;
   font-size: 12px;
@@ -15,6 +22,7 @@
   flex: 4;
   flex-direction: row;
   text-align: center;
+  
   
   justify-content: center;
   align-items: center ;

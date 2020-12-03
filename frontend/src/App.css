@@ -44,5 +44,6 @@ p {
   color: #fff;
   font-size: calc(6px + 1vmin);
   padding: 0px;
+  text-align: center;
   margin: 0px;
 }

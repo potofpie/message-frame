@@ -40,10 +40,7 @@
 @media screen and (max-width: 1000px) {
   .FileUpload-object-container  {
     height: 100px;
-    width: 400px;
-  }
-  .FileUpload-container {
-    width: 400px;
+    width: 90%;
   }
 }
 

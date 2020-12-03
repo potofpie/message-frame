@@ -18,9 +18,13 @@ function App() {
   const [file, setFile]  = useState(null);
   const [message, setMessage]  = useState(null);
   const [newImage, setNewImage]  = useState(null);
+  const [width, setWidth ]  = useState(window.innerWidth);
   const [keyType, setKeyType]  = useState('public');
 
 
+  window.addEventListener('resize', () => {
+    setWidth(window.innerWidth);
+  });
 
   let encrypt = () => {
     var formData = new FormData();
@@ -70,7 +74,7 @@ function App() {
           <> 
             <RadioButton keyType={keyType} setKeyType={setKeyType}/>
             <MessageBox setMessage={setMessage}/>
-            <KeyPair keyPair={keyPair}/>
+            <KeyPair screenWidth={width} keyType={keyType} keyPair={keyPair}/>
             <FileUpload setFile={setFile} file={file} />
             <ActionButtons encrypt={testingTheValues} />
           </>

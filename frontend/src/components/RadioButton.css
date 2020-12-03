@@ -7,9 +7,12 @@
       font-family: 'Source Code Pro', monospace;
       color: #fff;
     }
+  
 .RadioButton-object-container {
     border: 1px solid #ffff80;
+    border-radius: 4px;
 }
+
 
 .RadioButton-container {
       display: flex;
