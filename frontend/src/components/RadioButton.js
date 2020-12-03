@@ -32,12 +32,12 @@ export default function ActionButtons(props) {
             <SpecialButton id='public' 
                     onClick={onClickRadioButton} 
                     className={'RadioButton-button'}>
-                    Public
+                    Encrypt
             </SpecialButton>
             <SpecialButton id='private' 
                     onClick={onClickRadioButton} 
                     className={'RadioButton-button'}>
-                    Private
+                    Decrypt
             </SpecialButton>
         </div>
     </div>

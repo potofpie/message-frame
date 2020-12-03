@@ -1,3 +1,8 @@
+.ActionButtons-button:active {
+  transform: translateY(2px);
+}
+
+
 .ActionButtons-button span {
   cursor: pointer;
   display: inline-block;
