@@ -49,11 +49,17 @@
 @media screen and (max-width: 1000px) {
   .KeyPair-object-container {
     flex-direction: column;
-    align-items: center;
+    justify-content: space-around ;
+    height: 100%;
     
   }
   .KeyPair-key {
     margin: 5px;
+  }
+  .KeyPair-container {
+    display: flex;
+    flex: 5;
+    align-items: space-around ;
   }
 }
 

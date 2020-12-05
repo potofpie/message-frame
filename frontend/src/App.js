@@ -68,16 +68,16 @@ function App() {
       </div>
       <div className='App-body'>
         {
-        keyPair === null ? 
-          <CircleBoi /> 
-          : 
-          <> 
-            <RadioButton keyType={keyType} setKeyType={setKeyType}/>
-            <MessageBox setMessage={setMessage}/>
-            <KeyPair screenWidth={width} keyType={keyType} keyPair={keyPair}/>
-            <FileUpload setFile={setFile} file={file} />
-            <ActionButtons encrypt={keyType === 'public' ?  encrypt : testingTheValues} />
-          </>
+          keyPair === null ? 
+            <CircleBoi /> 
+            : 
+            <> 
+              <RadioButton keyType={keyType} setKeyType={setKeyType}/>
+              <MessageBox setMessage={setMessage}/>
+              <KeyPair screenWidth={width} keyType={keyType} keyPair={keyPair}/>
+              <FileUpload setFile={setFile} file={file} />
+              <ActionButtons encrypt={keyType === 'public' ?  encrypt : testingTheValues} />
+            </>
         }
       </div>
       {/* <img src={newImage}/> */}
