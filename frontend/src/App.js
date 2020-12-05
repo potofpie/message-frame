@@ -31,8 +31,8 @@ function App() {
     formData.append('string', message);
     formData.append('private', keyPair['private']);
     formData.append('public', keyPair['public']);
-    formData.append('image', newImage);
-    formData.append('messageImage', newImage);
+    // formData.append('image', newImage);
+    // formData.append('messageImage', newImage);
     axios.post(`http://localhost:5000/api/imageEncryption/createMessageImage`, formData, {
       headers: {
         'Content-Type': 'multipart/form-data'
@@ -76,7 +76,7 @@ function App() {
             <MessageBox setMessage={setMessage}/>
             <KeyPair screenWidth={width} keyType={keyType} keyPair={keyPair}/>
             <FileUpload setFile={setFile} file={file} />
-            <ActionButtons encrypt={testingTheValues} />
+            <ActionButtons encrypt={keyType === 'public' ?  encrypt : testingTheValues} />
           </>
         }
       </div>

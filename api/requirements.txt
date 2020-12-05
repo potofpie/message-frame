@@ -1,0 +1,7 @@
+coloredlogs==14.0
+cryptography==2.1.4
+Flask==1.1.2
+Flask-Cors==3.0.9
+Pillow==5.1.0
+pycrypto==2.6.1
+rsa==4.6

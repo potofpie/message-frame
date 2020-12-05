@@ -17,7 +17,13 @@ export default function ActionButtons(props) {
         } 
       }
     );
-    return <animated.button id={params.id} className={params.className} onClick={params.onClick} style={style}>{params.children}</animated.button>;
+    return <animated.button id={params.id} 
+                            className={params.className} 
+                            onClick={params.onClick}  
+                            style={style}
+                            >
+                            {params.children}
+            </animated.button>;
   };
 
   const onClickRadioButton = (e) => {
@@ -26,8 +32,6 @@ export default function ActionButtons(props) {
   return (
 
     <div className='RadioButton-container'>
-    {/* <SpecialButton>eat shit</SpecialButton> */}
-
         <div className='RadioButton-object-container'>
             <SpecialButton id='public' 
                     onClick={onClickRadioButton} 

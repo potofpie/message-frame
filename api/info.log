@@ -1388,3 +1388,10 @@ Traceback (most recent call last):
   File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
     raise exceptions.BadRequestKeyError(key)
 werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-04 20:56:45,898 : routes.makeImageEncryptionRoutes (def createMessageImage) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/home/bobby/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 23, in createMessageImage
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
