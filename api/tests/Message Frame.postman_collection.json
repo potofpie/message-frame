@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Home",
+			"name": "home",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -24,7 +24,7 @@
 			"response": []
 		},
 		{
-			"name": "Create key pair",
+			"name": "create key pair",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -56,7 +56,7 @@
 			"response": []
 		},
 		{
-			"name": "createMessageImage",
+			"name": "decrypt",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -90,11 +90,13 @@
 						}
 					],
 					"options": {
-						"formdata": {}
+						"raw": {
+							"language": "json"
+						}
 					}
 				},
 				"url": {
-					"raw": "{{HOST}}:{{PORT}}/api/imageEncryption/createMessageImage",
+					"raw": "{{HOST}}:{{PORT}}/api/imageEncryption/decrypt",
 					"host": [
 						"{{HOST}}"
 					],
@@ -102,14 +104,14 @@
 					"path": [
 						"api",
 						"imageEncryption",
-						"createMessageImage"
+						"decrypt"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "readMessageImage",
+			"name": "encrypt",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -118,7 +120,7 @@
 					"formdata": [
 						{
 							"key": "string",
-							"value": "This is cool. We are getting close!",
+							"value": "This is cool. How was work?!?!",
 							"type": "text"
 						},
 						{
@@ -135,14 +137,21 @@
 							"key": "image",
 							"type": "file",
 							"src": "/C:/Users/Bobby Christopher/OneDrive/Desktop/SomethingSomethingSoupSomethingLogo.png"
+						},
+						{
+							"key": "messageImage",
+							"type": "file",
+							"src": "/C:/Code/message-frame/resources/pictures/output.jpg"
 						}
 					],
 					"options": {
-						"formdata": {}
+						"raw": {
+							"language": "json"
+						}
 					}
 				},
 				"url": {
-					"raw": "{{HOST}}:{{PORT}}/api/imageEncryption/readMessageImage",
+					"raw": "{{HOST}}:{{PORT}}/api/imageEncryption/encrypt",
 					"host": [
 						"{{HOST}}"
 					],
@@ -150,7 +159,7 @@
 					"path": [
 						"api",
 						"imageEncryption",
-						"readMessageImage"
+						"encrypt"
 					]
 				}
 			},

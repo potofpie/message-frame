@@ -1,0 +1,852 @@
+ERROR : 2020-12-05 15:32:18,019 : routes.makeImageEncryptionRoutes (def createMessageImage) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 22, in createMessageImage
+    string, publicKey, privateKey = [data['string'], data['public'], data['private']]
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 15:32:18,019 : routes.makeImageEncryptionRoutes (def createMessageImage) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 22, in createMessageImage
+    string, publicKey, privateKey = [data['string'], data['public'], data['private']]
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 15:32:22,616 : routes.makeImageEncryptionRoutes (def createMessageImage) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 22, in createMessageImage
+    string, publicKey, privateKey = [data['string'], data['public'], data['private']]
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 15:32:22,616 : routes.makeImageEncryptionRoutes (def createMessageImage) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 22, in createMessageImage
+    string, publicKey, privateKey = [data['string'], data['public'], data['private']]
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 15:32:22,616 : routes.makeImageEncryptionRoutes (def createMessageImage) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 22, in createMessageImage
+    string, publicKey, privateKey = [data['string'], data['public'], data['private']]
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 15:45:01,871 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 48, in decrypt
+    string, publicKey, privateKey = [data['public'], data['private']]
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 15:45:50,729 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 48, in decrypt
+    string, publicKey, privateKey = [data['public'], data['private']]
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 15:45:50,729 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 48, in decrypt
+    string, publicKey, privateKey = [data['public'], data['private']]
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 15:48:15,245 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 48, in decrypt
+    string, publicKey, privateKey = [data['public'], data['private']]
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 15:48:15,245 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 48, in decrypt
+    string, publicKey, privateKey = [data['public'], data['private']]
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 15:48:15,245 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 48, in decrypt
+    string, publicKey, privateKey = [data['public'], data['private']]
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 16:34:22,815 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 23, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 16:34:52,329 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 23, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 16:34:52,329 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 23, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 16:37:00,149 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 24, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 16:37:19,130 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 24, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 16:37:47,062 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 24, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 16:37:47,062 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 24, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 16:38:54,240 : routes.makeImageEncryptionRoutes (def encrypt) : name 'publicKey' is not defined
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 30, in encrypt
+    base64StringEncrypted = use_cases.encryptString(publicKey, string)
+NameError: name 'publicKey' is not defined
+ERROR : 2020-12-05 16:38:54,240 : routes.makeImageEncryptionRoutes (def encrypt) : name 'publicKey' is not defined
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 30, in encrypt
+    base64StringEncrypted = use_cases.encryptString(publicKey, string)
+NameError: name 'publicKey' is not defined
+ERROR : 2020-12-05 16:38:54,240 : routes.makeImageEncryptionRoutes (def encrypt) : name 'publicKey' is not defined
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 30, in encrypt
+    base64StringEncrypted = use_cases.encryptString(publicKey, string)
+NameError: name 'publicKey' is not defined
+ERROR : 2020-12-05 16:40:14,685 : routes.makeImageEncryptionRoutes (def encrypt) : name 'publicKey' is not defined
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 30, in encrypt
+    base64StringEncrypted = use_cases.encryptString(publicKey, string)
+NameError: name 'publicKey' is not defined
+ERROR : 2020-12-05 16:40:14,685 : routes.makeImageEncryptionRoutes (def encrypt) : name 'publicKey' is not defined
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 30, in encrypt
+    base64StringEncrypted = use_cases.encryptString(publicKey, string)
+NameError: name 'publicKey' is not defined
+ERROR : 2020-12-05 16:40:14,685 : routes.makeImageEncryptionRoutes (def encrypt) : name 'publicKey' is not defined
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 30, in encrypt
+    base64StringEncrypted = use_cases.encryptString(publicKey, string)
+NameError: name 'publicKey' is not defined
+ERROR : 2020-12-05 16:40:14,685 : routes.makeImageEncryptionRoutes (def encrypt) : name 'publicKey' is not defined
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 30, in encrypt
+    base64StringEncrypted = use_cases.encryptString(publicKey, string)
+NameError: name 'publicKey' is not defined
+ERROR : 2020-12-05 16:40:23,826 : routes.makeImageEncryptionRoutes (def encrypt) : name 'publicKey' is not defined
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 30, in encrypt
+    base64StringEncrypted = use_cases.encryptString(publicKey, string)
+NameError: name 'publicKey' is not defined
+ERROR : 2020-12-05 16:45:06,555 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 22, in encrypt
+    string, key, keyType = [data['string'], data['key'], data['keyType']]
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 16:45:06,555 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 22, in encrypt
+    string, key, keyType = [data['string'], data['key'], data['keyType']]
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 16:48:47,846 : routes.makeImageEncryptionRoutes (def decrypt) : name 'privateKey' is not defined
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(privateKey, stringFromImage)
+NameError: name 'privateKey' is not defined
+ERROR : 2020-12-05 17:41:27,341 : routes.makeImageEncryptionRoutes (def encrypt) : save() got an unexpected keyword argument 'quality'
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 86, in sendImage
+    image.save(img_io, 'PNG', quality=70)
+TypeError: save() got an unexpected keyword argument 'quality'
+ERROR : 2020-12-05 18:54:45,403 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 24, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 18:54:45,403 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 24, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 18:54:45,403 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 24, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 18:55:46,744 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 23, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 18:56:14,014 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 24, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 18:56:54,241 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 25, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 18:56:57,610 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 25, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 18:56:57,610 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 25, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 18:59:03,684 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 24, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 18:59:31,999 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 24, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 18:59:45,299 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 24, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 18:59:45,299 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 24, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 18:59:51,370 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 25, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 19:01:51,143 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 23, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 19:05:46,680 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 23, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 19:05:51,730 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 23, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 19:05:51,730 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 23, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 19:10:08,926 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 23, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 19:10:08,926 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 23, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 19:10:08,926 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 23, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 19:10:08,926 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 23, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 19:10:08,926 : routes.makeImageEncryptionRoutes (def encrypt) : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 23, in encrypt
+    image = files['image']
+  File "/home/bobby/.local/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR : 2020-12-05 22:12:27,615 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x83 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x83 in position 0: invalid start byte
+ERROR : 2020-12-05 22:12:27,615 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x83 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x83 in position 0: invalid start byte
+ERROR : 2020-12-05 22:12:27,615 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x83 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x83 in position 0: invalid start byte
+ERROR : 2020-12-05 22:12:41,949 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x83 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x83 in position 0: invalid start byte
+ERROR : 2020-12-05 22:12:41,949 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x83 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x83 in position 0: invalid start byte
+ERROR : 2020-12-05 22:12:41,949 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x83 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x83 in position 0: invalid start byte
+ERROR : 2020-12-05 22:12:41,949 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x83 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x83 in position 0: invalid start byte
+ERROR : 2020-12-05 22:17:08,445 : routes.makeImageEncryptionRoutes (def decrypt) : Incorrect padding
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 7, in decryptString
+    encryptedBytes =  base64.decodebytes(base64StringEncrypted.encode('utf-8'))
+  File "/usr/lib/python3.6/base64.py", line 546, in decodebytes
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR : 2020-12-05 22:17:08,445 : routes.makeImageEncryptionRoutes (def decrypt) : Incorrect padding
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 7, in decryptString
+    encryptedBytes =  base64.decodebytes(base64StringEncrypted.encode('utf-8'))
+  File "/usr/lib/python3.6/base64.py", line 546, in decodebytes
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR : 2020-12-05 22:17:08,445 : routes.makeImageEncryptionRoutes (def decrypt) : Incorrect padding
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 7, in decryptString
+    encryptedBytes =  base64.decodebytes(base64StringEncrypted.encode('utf-8'))
+  File "/usr/lib/python3.6/base64.py", line 546, in decodebytes
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR : 2020-12-05 22:17:08,445 : routes.makeImageEncryptionRoutes (def decrypt) : Incorrect padding
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 7, in decryptString
+    encryptedBytes =  base64.decodebytes(base64StringEncrypted.encode('utf-8'))
+  File "/usr/lib/python3.6/base64.py", line 546, in decodebytes
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR : 2020-12-05 22:17:08,445 : routes.makeImageEncryptionRoutes (def decrypt) : Incorrect padding
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 7, in decryptString
+    encryptedBytes =  base64.decodebytes(base64StringEncrypted.encode('utf-8'))
+  File "/usr/lib/python3.6/base64.py", line 546, in decodebytes
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR : 2020-12-05 22:17:08,445 : routes.makeImageEncryptionRoutes (def decrypt) : Incorrect padding
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 7, in decryptString
+    encryptedBytes =  base64.decodebytes(base64StringEncrypted.encode('utf-8'))
+  File "/usr/lib/python3.6/base64.py", line 546, in decodebytes
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR : 2020-12-05 22:17:08,445 : routes.makeImageEncryptionRoutes (def decrypt) : Incorrect padding
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 7, in decryptString
+    encryptedBytes =  base64.decodebytes(base64StringEncrypted.encode('utf-8'))
+  File "/usr/lib/python3.6/base64.py", line 546, in decodebytes
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR : 2020-12-05 22:17:08,445 : routes.makeImageEncryptionRoutes (def decrypt) : Incorrect padding
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 7, in decryptString
+    encryptedBytes =  base64.decodebytes(base64StringEncrypted.encode('utf-8'))
+  File "/usr/lib/python3.6/base64.py", line 546, in decodebytes
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR : 2020-12-05 22:17:08,445 : routes.makeImageEncryptionRoutes (def decrypt) : Incorrect padding
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 7, in decryptString
+    encryptedBytes =  base64.decodebytes(base64StringEncrypted.encode('utf-8'))
+  File "/usr/lib/python3.6/base64.py", line 546, in decodebytes
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR : 2020-12-05 22:17:54,321 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:17:54,321 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:17:54,321 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:17:54,321 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:17:54,321 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:17:54,321 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:17:54,321 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:17:54,321 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:17:54,321 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:17:54,321 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:17:54,321 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:17:55,759 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:17:55,759 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:17:55,759 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:17:55,759 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:17:55,759 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:17:55,759 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:17:55,759 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:17:55,759 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:17:55,759 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:17:55,759 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:17:55,759 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:17:55,759 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:18:09,645 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:18:09,645 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:18:09,645 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:18:09,645 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:18:09,645 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:18:09,645 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:18:09,645 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:18:09,645 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:18:09,645 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:18:09,645 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:18:09,645 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:18:09,645 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:18:09,645 : routes.makeImageEncryptionRoutes (def decrypt) : 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 14, in decryptString
+    return decryptedString.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte
+ERROR : 2020-12-05 22:18:48,487 : routes.makeImageEncryptionRoutes (def decrypt) : Incorrect padding
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 7, in decryptString
+    encryptedBytes =  base64.decodebytes(base64StringEncrypted.encode('utf-8'))
+  File "/usr/lib/python3.6/base64.py", line 546, in decodebytes
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR : 2020-12-05 22:18:48,487 : routes.makeImageEncryptionRoutes (def decrypt) : Incorrect padding
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 7, in decryptString
+    encryptedBytes =  base64.decodebytes(base64StringEncrypted.encode('utf-8'))
+  File "/usr/lib/python3.6/base64.py", line 546, in decodebytes
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR : 2020-12-05 22:18:48,487 : routes.makeImageEncryptionRoutes (def decrypt) : Incorrect padding
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 7, in decryptString
+    encryptedBytes =  base64.decodebytes(base64StringEncrypted.encode('utf-8'))
+  File "/usr/lib/python3.6/base64.py", line 546, in decodebytes
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR : 2020-12-05 22:18:48,487 : routes.makeImageEncryptionRoutes (def decrypt) : Incorrect padding
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 7, in decryptString
+    encryptedBytes =  base64.decodebytes(base64StringEncrypted.encode('utf-8'))
+  File "/usr/lib/python3.6/base64.py", line 546, in decodebytes
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR : 2020-12-05 22:18:48,487 : routes.makeImageEncryptionRoutes (def decrypt) : Incorrect padding
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 7, in decryptString
+    encryptedBytes =  base64.decodebytes(base64StringEncrypted.encode('utf-8'))
+  File "/usr/lib/python3.6/base64.py", line 546, in decodebytes
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR : 2020-12-05 22:18:48,487 : routes.makeImageEncryptionRoutes (def decrypt) : Incorrect padding
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 7, in decryptString
+    encryptedBytes =  base64.decodebytes(base64StringEncrypted.encode('utf-8'))
+  File "/usr/lib/python3.6/base64.py", line 546, in decodebytes
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR : 2020-12-05 22:18:48,487 : routes.makeImageEncryptionRoutes (def decrypt) : Incorrect padding
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 7, in decryptString
+    encryptedBytes =  base64.decodebytes(base64StringEncrypted.encode('utf-8'))
+  File "/usr/lib/python3.6/base64.py", line 546, in decodebytes
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR : 2020-12-05 22:18:48,487 : routes.makeImageEncryptionRoutes (def decrypt) : Incorrect padding
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 7, in decryptString
+    encryptedBytes =  base64.decodebytes(base64StringEncrypted.encode('utf-8'))
+  File "/usr/lib/python3.6/base64.py", line 546, in decodebytes
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR : 2020-12-05 22:18:48,487 : routes.makeImageEncryptionRoutes (def decrypt) : Incorrect padding
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 7, in decryptString
+    encryptedBytes =  base64.decodebytes(base64StringEncrypted.encode('utf-8'))
+  File "/usr/lib/python3.6/base64.py", line 546, in decodebytes
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR : 2020-12-05 22:18:48,487 : routes.makeImageEncryptionRoutes (def decrypt) : Incorrect padding
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 7, in decryptString
+    encryptedBytes =  base64.decodebytes(base64StringEncrypted.encode('utf-8'))
+  File "/usr/lib/python3.6/base64.py", line 546, in decodebytes
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR : 2020-12-05 22:18:48,487 : routes.makeImageEncryptionRoutes (def decrypt) : Incorrect padding
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 7, in decryptString
+    encryptedBytes =  base64.decodebytes(base64StringEncrypted.encode('utf-8'))
+  File "/usr/lib/python3.6/base64.py", line 546, in decodebytes
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR : 2020-12-05 22:18:48,487 : routes.makeImageEncryptionRoutes (def decrypt) : Incorrect padding
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 7, in decryptString
+    encryptedBytes =  base64.decodebytes(base64StringEncrypted.encode('utf-8'))
+  File "/usr/lib/python3.6/base64.py", line 546, in decodebytes
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR : 2020-12-05 22:18:48,487 : routes.makeImageEncryptionRoutes (def decrypt) : Incorrect padding
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 7, in decryptString
+    encryptedBytes =  base64.decodebytes(base64StringEncrypted.encode('utf-8'))
+  File "/usr/lib/python3.6/base64.py", line 546, in decodebytes
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+ERROR : 2020-12-05 22:18:48,487 : routes.makeImageEncryptionRoutes (def decrypt) : Incorrect padding
+Traceback (most recent call last):
+  File "/mnt/c/Code/message-frame/api/routes/makeImageEncryptionRoutes.py", line 58, in decrypt
+    decryptedString = use_cases.decryptString(key, stringFromImage)
+  File "/mnt/c/Code/message-frame/api/use_cases/encryption/makeDecryptString.py", line 7, in decryptString
+    encryptedBytes =  base64.decodebytes(base64StringEncrypted.encode('utf-8'))
+  File "/usr/lib/python3.6/base64.py", line 546, in decodebytes
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding

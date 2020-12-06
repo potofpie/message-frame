@@ -9,7 +9,7 @@
 
 .App-header {
   display: flex;
-  flex: 1;
+  flex: 6;
 
   align-items: center;
   justify-content: center;
@@ -23,7 +23,7 @@
 }
 .App-body {
   display: flex;
-  flex: 5;
+  flex: 25;
   width: 100%;
 
   flex-direction: column;
@@ -38,7 +38,17 @@
 }
 
 
+.App-footer{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex: 1;
+}
 
+
+.poopdick{
+  width: 25%;
+}
 
 p {
   color: #fff;
@@ -47,3 +57,16 @@ p {
   text-align: center;
   margin: 0px;
 }
+
+a {
+  color: #fff;
+  font-size: calc(3px + 1vmin);
+  padding: 0px;
+  text-align: center;
+  margin: 0px;
+}
+
+a:hover {
+  color: #ffff80;
+}
+

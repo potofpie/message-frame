@@ -8,7 +8,7 @@ import React from 'react';
 export default function FileUpload(props) {
   
   const fileHandler = (e) => {
-    props.setFile(e.target.files[0])
+    props.setImage(e.target.files[0])
   }
 
   return (
@@ -16,7 +16,7 @@ export default function FileUpload(props) {
         {/* <div> upload your image here</div> */}
         <div className='FileUpload-object-container'>
           <input className='FileUpload-link' type="file" id="input" multiple onChange={fileHandler}></input>
-          <img className='FileUpload-preview' src={props.file? URL.createObjectURL(props.file) : null} alt={props.file? props.file.name : null}/>
+          <img className='FileUpload-preview' src={props.image? URL.createObjectURL(props.image) : null} alt={props.image ? props.image.name : null}/>
         </div>
     </div>
   );

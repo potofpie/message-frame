@@ -58,7 +58,7 @@
   }
   .KeyPair-container {
     display: flex;
-    flex: 5;
+    flex: 7;
     align-items: space-around ;
   }
 }

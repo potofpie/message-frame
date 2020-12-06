@@ -1,0 +1,44 @@
+.NotificationBox-object-container {
+    display: flex;
+    flex: 2;
+    border: 1px solid #ffff80;
+    background-color: #272822;
+    border-radius: 4px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    justify-content: center;
+    color: #fff;
+    max-width: 900px;
+    /* font-weight: bold */
+}
+
+.NotificationBox-object-container-left {
+  flex: 1;
+  align-items: flex-start;
+}
+
+.NotificationBox-object-container-center {
+  flex: 5;
+}
+
+.NotificationBox-object-container-right {
+  flex: 1;
+  align-items: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: right;
+}
+
+
+
+.NotificationBox-container {
+      display: flex;
+      flex: 2;
+      border-radius: 4px;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+    }
