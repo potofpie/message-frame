@@ -60,11 +60,12 @@ p {
 
 a {
   color: #fff;
-  font-size: calc(3px + 1vmin);
+  font-size: 14px;
   padding: 0px;
   text-align: center;
   margin: 0px;
 }
+ 
 
 a:hover {
   color: #ffff80;
