@@ -14,6 +14,7 @@
 .KeyPair-small-info {
   margin: 0px;
   font-size: 12px;
+  padding: 5px;
   color: #fff;
 }
  
@@ -60,6 +61,12 @@
     display: flex;
     flex: 7;
     align-items: space-around ;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .KeyPair-container {
+    flex: 9;
   }
 }
 

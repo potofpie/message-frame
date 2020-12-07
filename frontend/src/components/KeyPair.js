@@ -28,7 +28,12 @@ function KeyPair(props) {
                         theme="monokai"
                         name="UNIQUE_ID_OF_DIV"
                         showGutter={false} 
-                        height='235px'
+                        height='215px'
+                        onChange={(e) => {
+                            let tmpKeyPair = props.keyPair
+                            tmpKeyPair.public = e
+                            props.setKeyPair(tmpKeyPair)
+                        }}
                         readOnly={props.keyType === 'public' ? false : true}
                         style={props.keyType === 'public' ? null : {color : '#595959'}}
                         width={props.screenWidth < 1000 ? determineWidth(props.screenWidth) : regularWidth} 
@@ -42,7 +47,12 @@ function KeyPair(props) {
                         mode="java"
                         theme="monokai"
                         name="UNIQUE_ID_OF_DIV"
-                        height='235px'
+                        height='215px'
+                        onChange={(e) => {
+                            let tmpKeyPair = props.keyPair
+                            tmpKeyPair.private = e
+                            props.setKeyPair(tmpKeyPair)
+                        }}
                         readOnly={props.keyType === 'private' ? false : true}
                         style={props.keyType === 'private' ? null : {color : '#595959'}}
                         width={props.screenWidth < 1000 ? determineWidth(props.screenWidth) : regularWidth} 

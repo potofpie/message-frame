@@ -10,12 +10,12 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#1a1a1a',
+    color: 'white',
   },
   paper: {
-    backgroundColor: theme.palette.background.paper,
     border: '1px solid #ffff80',
-    backgroundColor: '#1a1a1a',
+    height: '50vh',
+    widith: '50vw'
   },
 }));
 

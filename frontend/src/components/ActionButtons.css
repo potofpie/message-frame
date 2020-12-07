@@ -50,3 +50,12 @@
     justify-content: center;
     flex-direction: row;
   }
+
+
+  @media screen and (max-height: 800px) {
+    .ActionButtons-button {
+      height: 60%;
+    }
+  }
+
+  

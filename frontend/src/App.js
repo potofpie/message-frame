@@ -16,7 +16,12 @@ import SecretFile from './resources/envelope.png';
 
 
 
+
+
 function App() {
+  let notificationTimeout;
+
+  
   // request variable
   const [keyType, setKeyType]  = useState('public');
   const [keyPair, setKeyPair] = useState(null);
@@ -31,6 +36,15 @@ function App() {
   const [width, setWidth ]  = useState(window.innerWidth);
   const [notificationText, setNotificationText ]  = useState(null);
   
+  let createNotificationText = (text) => {
+    if(notificationTimeout){
+      clearTimeout(notificationTimeout);
+    }
+    setNotificationText(text);
+    setTimeout(() => {setNotificationText(null)}, 8000);
+  }
+
+
   window.addEventListener('resize', () => {
     setWidth(window.innerWidth);
   });
@@ -61,7 +75,7 @@ function App() {
     } else {
       let requestItems = {image, keyType, keyPair, message}
       const requestItemsError = Object.keys(requestItems).filter((k) => !requestItems[k])
-      setNotificationText(`Please select a ${requestItemsError}!`);
+      createNotificationText(`Please select a ${requestItemsError}!`);
     }
   }
 
@@ -85,12 +99,12 @@ function App() {
         const data = res.data.body;
         setResponseMessage(data)
         console.log(data)
-        setNotificationText(`Your message was ${data}`)
+        createNotificationText(`Your message was ${data}`)
       })
     } else {
       let requestItems = {image, keyType, keyPair}
       let requestItemsError = Object.keys(requestItems).filter((k) => !requestItems[k])
-      setNotificationText(`Please select a ${requestItemsError}!`);
+      createNotificationText(`Please select a ${requestItemsError}!`);
     }
   }
   
@@ -122,14 +136,14 @@ function App() {
             <> 
               <RadioButton keyType={keyType} setKeyType={setKeyType}/>
               <MessageBox setMessage={setMessage}/>
-              <KeyPair screenWidth={width} keyType={keyType} keyPair={keyPair}/>
+              <KeyPair screenWidth={width} keyType={keyType} keyPair={keyPair} setKeyPair={setKeyPair}/>
               <FileUpload setImage={setImage} image={image} />
               <ActionButtons encrypt={keyType === 'public' ?  encrypt : decrypt} />
             </>
         }
       </div>
-      <ModalWindow setOpen={setResponseImage} open={responseImage}
-        ><img src={responseImage}/>
+      <ModalWindow setOpen={setResponseImage} open={responseImage}>
+        <img className='poopdick' src={responseImage}/>
       </ModalWindow>
       <div className="App-footer">
           <p><a href='https://potofpie.github.io/BobbyChristopher/'>Portfolio</a> | <a href='https://www.linkedin.com/in/bobbychristopher/'>LinkedIn</a> | <a href='https://github.com/potofpie'>GitHub</a></p>
