@@ -1,4 +1,4 @@
-# Goals TM
+# message-frame
 ### Summary 
 > Storing undetectable encrypted messages in images. 
 ### Technology
