@@ -129,7 +129,7 @@ function App() {
         }
       </div>
       <ModalWindow setOpen={setResponseImage} open={responseImage}
-        ><img className='poopdick' src={responseImage}/>
+        ><img src={responseImage}/>
       </ModalWindow>
       <div className="App-footer">
           <p><a href='https://potofpie.github.io/BobbyChristopher/'>Portfolio</a> | <a href='https://www.linkedin.com/in/bobbychristopher/'>LinkedIn</a> | <a href='https://github.com/potofpie'>GitHub</a></p>
