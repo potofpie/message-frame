@@ -64,35 +64,23 @@
 					"mode": "formdata",
 					"formdata": [
 						{
-							"key": "string",
-							"value": "Hi Anja. How was work?!?!",
-							"type": "text"
-						},
-						{
-							"key": "private",
+							"key": "key",
 							"value": "-----BEGIN RSA PRIVATE KEY-----\nMIICWwIBAAKBgQDoLYTdkMMdX4S3N7PsXsxZk9l14iC7b0OVAIFbQYOE0Pj/guSg\nuKI7JdkqO213pJhUmZunsF19crzylRLreGjHFT36TWoWue+/D8ABRIavWDd5RST9\nAIO2dUuHN76Pp1jlDAAuPWG18cSDSr4cfVA2uZP+IBJqckNhVwqQXr72aQIDAQAB\nAoGAAQ5D7mX8HSQUDGk6bja4Iygi8wBGOdP1sLXB4NJZcL8qgq7rrzdntXEknaaL\nhuG+t5PDO2333twos8mtvlhb0Zm1XEtXeZsBdCPoDnLBkOgE+orvpZkSXsDS+eRq\nZu+MSomjFEjmwuZ4j4Fw75yQXMsnxiOQ0UDRebeha0bKbSkCQQDt1zLaiW6i/ZU+\n4dS3AX1HU12bOvKxfEEnPOp84XhtDdiykiQgW78rl1hxNpy+07fdrYN1IQwL8fwl\nWT9QtvfzAkEA+eeiw9PQ6V1rp3bINCps1pLfmknL1snBmCs0cnMf3HXtfB8SuHk/\nmEAWOxUy27d2rr3Zu01xnKv+3/b69/NrMwJAF6PWKCaU2pp95RwpOm9pdldw7Gb1\njHKfPzkszXDTuXMw4L7p3FWCMOEAJ3CYL9d3ZQ9EC7ZXLjDFMSknw+wLxQJAYZk4\ndRh1X56Pm8CFIfJrvUVxNHWbuU/kXsSI4CXcDKK11CLikc8wqgplZD+8NBkrrcUR\nktgFBfYaPWfczhdwBwJADv/PqqB9V/4T7BF1EsCBIYVgxWoUOCjkXlPWzZwbK0fY\nIhWdTOyQVChoNQ7jhE50PY1a351F08vYf4t5VkNafQ==\n-----END RSA PRIVATE KEY-----",
 							"type": "text"
 						},
 						{
-							"key": "public",
-							"value": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDoLYTdkMMdX4S3N7PsXsxZk9l1\n4iC7b0OVAIFbQYOE0Pj/guSguKI7JdkqO213pJhUmZunsF19crzylRLreGjHFT36\nTWoWue+/D8ABRIavWDd5RST9AIO2dUuHN76Pp1jlDAAuPWG18cSDSr4cfVA2uZP+\nIBJqckNhVwqQXr72aQIDAQAB\n-----END PUBLIC KEY-----",
+							"key": "keyType",
+							"value": "private",
 							"type": "text"
 						},
 						{
 							"key": "image",
 							"type": "file",
-							"src": "/C:/Code/message-frame/resources/pictures/meme_sample.jpg"
-						},
-						{
-							"key": "messageImage",
-							"type": "file",
-							"src": []
+							"src": "/C:/Code/message-frame/resources/pictures/output.jpg"
 						}
 					],
 					"options": {
-						"raw": {
-							"language": "json"
-						}
+						"formdata": {}
 					}
 				},
 				"url": {
@@ -120,34 +108,33 @@
 					"formdata": [
 						{
 							"key": "string",
-							"value": "This is cool. How was work?!?!",
+							"value": "This is cool. How does it work?!?!",
 							"type": "text"
 						},
 						{
-							"key": "private",
-							"value": "-----BEGIN RSA PRIVATE KEY-----\nMIICWwIBAAKBgQDoLYTdkMMdX4S3N7PsXsxZk9l14iC7b0OVAIFbQYOE0Pj/guSg\nuKI7JdkqO213pJhUmZunsF19crzylRLreGjHFT36TWoWue+/D8ABRIavWDd5RST9\nAIO2dUuHN76Pp1jlDAAuPWG18cSDSr4cfVA2uZP+IBJqckNhVwqQXr72aQIDAQAB\nAoGAAQ5D7mX8HSQUDGk6bja4Iygi8wBGOdP1sLXB4NJZcL8qgq7rrzdntXEknaaL\nhuG+t5PDO2333twos8mtvlhb0Zm1XEtXeZsBdCPoDnLBkOgE+orvpZkSXsDS+eRq\nZu+MSomjFEjmwuZ4j4Fw75yQXMsnxiOQ0UDRebeha0bKbSkCQQDt1zLaiW6i/ZU+\n4dS3AX1HU12bOvKxfEEnPOp84XhtDdiykiQgW78rl1hxNpy+07fdrYN1IQwL8fwl\nWT9QtvfzAkEA+eeiw9PQ6V1rp3bINCps1pLfmknL1snBmCs0cnMf3HXtfB8SuHk/\nmEAWOxUy27d2rr3Zu01xnKv+3/b69/NrMwJAF6PWKCaU2pp95RwpOm9pdldw7Gb1\njHKfPzkszXDTuXMw4L7p3FWCMOEAJ3CYL9d3ZQ9EC7ZXLjDFMSknw+wLxQJAYZk4\ndRh1X56Pm8CFIfJrvUVxNHWbuU/kXsSI4CXcDKK11CLikc8wqgplZD+8NBkrrcUR\nktgFBfYaPWfczhdwBwJADv/PqqB9V/4T7BF1EsCBIYVgxWoUOCjkXlPWzZwbK0fY\nIhWdTOyQVChoNQ7jhE50PY1a351F08vYf4t5VkNafQ==\n-----END RSA PRIVATE KEY-----",
+							"key": "keyType",
+							"value": "public",
 							"type": "text"
 						},
 						{
-							"key": "public",
+							"key": "key",
 							"value": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDoLYTdkMMdX4S3N7PsXsxZk9l1\n4iC7b0OVAIFbQYOE0Pj/guSguKI7JdkqO213pJhUmZunsF19crzylRLreGjHFT36\nTWoWue+/D8ABRIavWDd5RST9AIO2dUuHN76Pp1jlDAAuPWG18cSDSr4cfVA2uZP+\nIBJqckNhVwqQXr72aQIDAQAB\n-----END PUBLIC KEY-----",
 							"type": "text"
 						},
 						{
 							"key": "image",
 							"type": "file",
-							"src": "/C:/Users/Bobby Christopher/OneDrive/Desktop/SomethingSomethingSoupSomethingLogo.png"
+							"src": "/C:/Code/message-frame/resources/pictures/meme_sample.jpg"
 						},
 						{
-							"key": "messageImage",
+							"key": "",
 							"type": "file",
-							"src": "/C:/Code/message-frame/resources/pictures/output.jpg"
+							"src": [],
+							"disabled": true
 						}
 					],
 					"options": {
-						"raw": {
-							"language": "json"
-						}
+						"formdata": {}
 					}
 				},
 				"url": {
