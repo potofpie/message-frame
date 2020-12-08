@@ -1,6 +1,6 @@
 <h1 align="center">message-frame</h1>
 <p align="center">
-  <img src="frontend/src/resources/envelope-with-background.png" alt="angular-logo" width="120px" height="120px"/>
+  <img src="frontend/src/resources/envelope-with-background-outline.png" alt="angular-logo" width="120px" height="120px"/>
   <br>
   <i>Storing undetectable encrypted messages in images. 
   </i>
