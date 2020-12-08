@@ -19,37 +19,51 @@ import SecretFile from './resources/envelope.png';
 
 
 function App() {
-  let notificationTimeout;
-
-  
   // request variable
   const [keyType, setKeyType]  = useState('public');
   const [keyPair, setKeyPair] = useState(null);
   const [message, setMessage]  = useState(null);
   const [image, setImage]  = useState(null);
-
   // response variable 
   const [responseImage, setResponseImage]  = useState(null);
   const [responseMessage, setResponseMessage]  = useState(null);
-  
   // variable browser
   const [width, setWidth ]  = useState(window.innerWidth);
   const [notificationText, setNotificationText ]  = useState(null);
+  const [notificationLink, setNotificationLink ]  = useState(null);
+  let notificationTimeout;
   
-  let createNotificationText = (text) => {
+  const createNotificationWithLink = (text,link) => {
     if(notificationTimeout){
       clearTimeout(notificationTimeout);
     }
     setNotificationText(text);
+    setNotificationLink(link)
+    setTimeout(() => {
+      setNotificationLink(null);
+      setNotificationText(null);
+      }, 8000);
+  }
+
+  const createNotificationText = (text) => {
+    if(notificationTimeout){
+      clearTimeout(notificationTimeout);
+    }
+    setNotificationLink(null);
+    setNotificationText(text);
     setTimeout(() => {setNotificationText(null)}, 8000);
   }
 
+  const startingNotification = () => { createNotificationWithLink(
+    'To generate custom keys follow the instructions ',
+    'https://github.com/potofpie/message-frame/blob/main/doc/generating_keys.md'
+  )}
 
   window.addEventListener('resize', () => {
     setWidth(window.innerWidth);
   });
 
-  let encrypt = () => {
+  const encrypt = () => {
     console.log({ key : keyPair[keyType],
                   keyType,
                   image,
@@ -79,7 +93,7 @@ function App() {
     }
   }
 
-  let decrypt = () => {
+  const decrypt = () => {
     console.log({ key : keyPair[keyType],
                   keyType,
                   image
@@ -111,6 +125,7 @@ function App() {
   
 
   useEffect(() => {
+      startingNotification()
       axios.get(`http://localhost:5000/api/imageEncryption/createKeyPair`)
         .then(res => {
           const data = res.data;
@@ -119,8 +134,9 @@ function App() {
   },[]);
   
   return (
+    
     <div className="App">
-      <NotificationBox  setNotificationText={setNotificationText} notificationText={notificationText}> you might be gay</NotificationBox>
+      <NotificationBox  notificationLink={notificationLink} setNotificationText={setNotificationText} notificationText={notificationText}> you might be gay</NotificationBox>
       <div className="App-header">
           <img src={SecretFile} className="App-logo" alt="logo" />
           <div>message-frame</div>
@@ -131,12 +147,12 @@ function App() {
       <div className='App-body'>
         {
           keyPair === null ? 
-            <CircleBoi /> 
+              <CircleBoi /> 
             : 
             <> 
               <RadioButton keyType={keyType} setKeyType={setKeyType}/>
               <MessageBox setMessage={setMessage}/>
-              <KeyPair screenWidth={width} keyType={keyType} keyPair={keyPair} setKeyPair={setKeyPair}/>
+              <KeyPair createNotificationText={createNotificationText} createNotificationWithLink={createNotificationWithLink} screenWidth={width} keyType={keyType} keyPair={keyPair} setKeyPair={setKeyPair}/>
               <FileUpload setImage={setImage} image={image} />
               <ActionButtons encrypt={keyType === 'public' ?  encrypt : decrypt} />
             </>

@@ -14,7 +14,7 @@
 /build
 */__pycache__
 *.pyc
-info.log
+*/info.log
 */debug.log
 
 # misc

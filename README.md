@@ -17,7 +17,7 @@
 
 
 ## Links
-* [Generating keys from cmd](./doc/generating_keys.md)
+* [Generating keys via cmd](./doc/generating_keys.md)
 * [LICENSE](./LICENSE)
 
 ## Recources

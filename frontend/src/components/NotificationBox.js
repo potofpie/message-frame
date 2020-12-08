@@ -15,9 +15,10 @@ export default function NotificationBox(props) {
     <div className='NotificationBox-container'>
         <animated.div style={style} className='NotificationBox-object-container'> 
           <div className='NotificationBox-object-container-left'></div>
-          <div className='NotificationBox-object-container-center'>{props.notificationText}</div>
+          <div className='NotificationBox-object-container-center'>{props.notificationText}
+          {props.notificationText && props.notificationLink ?<a href={props.notificationLink}> here</a>:null}
+          </div>
           <div className='NotificationBox-object-container-right'>
-            {/* <CloseButton/> */}
             <IconButton aria-label="delete"  size="small">
               <CloseIcon onClick={resetText} color='primary' fontSize="inherit"  style={{ color: grey[100] }}/>
             </IconButton>

@@ -1,4 +1,4 @@
-# Generating key via cmd
+# Generating keys via cmd
 ## Windows
 Install WSL then follow Linux/Mac instuctions 
 
