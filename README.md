@@ -6,12 +6,9 @@
   </i>
 </p>
 
-
 <p align="center">
   <a href="https://github.com/potofpie/message-frame/issues">Submit an Issue</a>
 </p>
-
-
 
 
 ## Technology
