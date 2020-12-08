@@ -17,6 +17,7 @@
 
 
 ## Links
+* [Building this project](./doc/build.md)
 * [Generating keys via cmd](./doc/generating_keys.md)
 * [LICENSE](./LICENSE)
 
