@@ -8,7 +8,7 @@
 
 
 <p align="center">
-  <a href="https://github.com/angular/angular/issues">Submit an Issue</a>
+  <a href="https://github.com/potofpie/message-frame/issues">Submit an Issue</a>
 </p>
 
 
