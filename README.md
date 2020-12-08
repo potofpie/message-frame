@@ -11,10 +11,14 @@
 </p>
 
 
+
 ## Technology
 > ![React](doc/readme_images/react.png) ![Python](doc/readme_images/python.png) ![Flask](doc/readme_images/flask.png)  ![GCloud](doc/readme_images/gcloud.png) ![Firebase](doc/readme_images/firebase.png) ![Ansible](doc/readme_images/ansible.png) ![Postman](doc/readme_images/postman.png)  
 
 
+## Links
+* [Generating keys from cmd](./doc/generating_keys.md)
+* [LICENSE](./LICENSE)
 
 ## Recources
 * http://www.google.com
