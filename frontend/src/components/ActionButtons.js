@@ -4,8 +4,8 @@ import './ActionButtons.css'
 export default function ActionButtons(props) {
   return (
     <div className='ActionButtons-container'>
-      <button onClick={props.encrypt} className='ActionButtons-button'><span>Lets Go!</span></button>
-      {/* <button className='ActionButtons-button'> <span> Decrypt</span> </button> */}
+      <button onClick={props.action} className='ActionButtons-button'><span>Go!</span></button>
+
     </div>
   );
 }

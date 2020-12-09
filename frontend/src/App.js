@@ -1,9 +1,9 @@
 import './App.css';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-import { Modal } from '@material-ui/core';
+// import { Modal } from '@material-ui/core';
 
-
+import config from './config';
 import KeyPair from './components/KeyPair';
 import CircleBoi from './components/CircleBoi';
 import ActionButtons from './components/ActionButtons';
@@ -75,8 +75,7 @@ function App() {
       formData.append('key', keyPair[keyType]);
       formData.append('keyType', keyType);
       formData.append('image', image);
-      
-      axios.post(`http://localhost:5000/api/imageEncryption/encrypt`, formData, {
+      axios.post(config.host+`/api/imageEncryption/encrypt`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
@@ -105,7 +104,7 @@ function App() {
       formData.append('keyType', keyType);
       formData.append('image', image);
 
-      axios.post(`http://localhost:5000/api/imageEncryption/decrypt`, formData, {
+      axios.post(config.host+`/api/imageEncryption/decrypt`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
@@ -126,7 +125,7 @@ function App() {
 
   useEffect(() => {
       startingNotification()
-      axios.get(`http://localhost:5000/api/imageEncryption/createKeyPair`)
+      axios.get(config.host+`/api/imageEncryption/createKeyPair`)
         .then(res => {
           const data = res.data;
           keyPair === null ? setKeyPair(data['body']) : console.log('something');
@@ -154,12 +153,12 @@ function App() {
               <MessageBox setMessage={setMessage}/>
               <KeyPair createNotificationText={createNotificationText} createNotificationWithLink={createNotificationWithLink} screenWidth={width} keyType={keyType} keyPair={keyPair} setKeyPair={setKeyPair}/>
               <FileUpload setImage={setImage} image={image} />
-              <ActionButtons encrypt={keyType === 'public' ?  encrypt : decrypt} />
+              <ActionButtons text={keyType === 'public' ?  'Encrypt' : 'Decrypt'} action={keyType === 'public' ?  encrypt : decrypt} />
             </>
         }
       </div>
       <ModalWindow setOpen={setResponseImage} open={responseImage}>
-        <img className='poopdick' src={responseImage}/>
+        <img alt='the_string' className='poopdick' src={responseImage}/>
       </ModalWindow>
       <div className="App-footer">
           <p><a href='https://potofpie.github.io/BobbyChristopher/'>Portfolio</a> | <a href='https://www.linkedin.com/in/bobbychristopher/'>LinkedIn</a> | <a href='https://github.com/potofpie'>GitHub</a></p>

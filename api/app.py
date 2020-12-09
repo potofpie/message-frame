@@ -16,10 +16,8 @@ logger = createLogger(__name__ + '(app.py)')
 @app.route('/')
 def home():
     try:
-        # main()
         logger.info({'body' : 'Welcome to the Message Frame API!'})
-        publicKey, privateKey = rsa.newkeys(512)
-        return {'body': str(publicKey)}, 200
+        return {'body' : 'Welcome to the Message Frame API!'}, 200
     except Exception as error:
         logger.exception(error)
         return {'body': str(error)}, 400
