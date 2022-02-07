@@ -1,6 +1,25 @@
-import { FC, useRef } from 'react'
+import { FC, useRef, useState } from 'react'
 import styled from 'styled-components';
+import { FileUploader } from './FileUploader'
 
+import { KeyPair } from './KeyPair'
+ 
+
+const AppContainer = styled.div.attrs( {
+  className: "flex flex-1 justify-evenly items-center flex-col  "
+})``
+
+const TitleSection = styled.div.attrs( {
+  className: "flex h-1/6  justify-end items-center flex-col "
+})``
+
+const ActionSection = styled.div.attrs( {
+  className: "flex h-5/6 justify-evenly items-center flex-col "
+})``
+
+const Loading = styled.span.attrs( {
+  className: "animate-ping inline-flex h-16 w-16 rounded-full bg-yellow opacity-75"
+})``
 
 const Title = styled.div.attrs( {
   className: "text-yellow text-3xl"
@@ -8,48 +27,50 @@ const Title = styled.div.attrs( {
 const Description = styled.div.attrs( {
   className: "text-white text-sm "
 })``
+
+
 const MessageField = styled.input.attrs( {
   className: "text-white text-sm border-2 border-yellow bg-green p-1 rounded w-9/12	text-center"
 })``
 
+
 const Button = styled.button.attrs( {
-  className: "text-white text-sm border-2 border-yellow bg-green p-1	text-center"
+  className: "text-white text-sm border-2 border-yellow bg-green p-1 rounded w-9/12	text-center"
 })``
 
+
+
 export const App:FC = () => {
-
-  const hiddenFileInput = useRef<any>(null);
+  const [image, setImage] = useState<any>()
   
-  const handleClick = (event: any) => {
-    hiddenFileInput?.current?.click()
-    console.log(hiddenFileInput?.current?.fileUpload)
-    
 
-  };
 
   return (
-    <div className="flex flex-1 justify-center items-center flex-col ">
-      
+    <AppContainer>
+      <TitleSection>
+        <Title > 
+          message-frame
+        </Title>
+        <Description  > 
+          A quick and simple way to hide encrypted messages in a image.
+        </Description>
+      </TitleSection>
 
-      
-      <Title  > 
-        message-frame
-      </Title>
-      <Description  > 
-        A quick and simple way to hide encrypted messages in a image.
-      </Description>
-
-      <MessageField placeholder='enter a message here' />
-      <Button  onClick={handleClick}>
-        Upload a file
-      </Button>
-      {console.log(hiddenFileInput)}
-      <input type="file"
-             ref={hiddenFileInput}
-             style={{display:'none'}} 
-      /> 
-      
-</div>
+      <ActionSection> 
+        {false ? 
+          <Loading/>
+        : 
+        <>
+          <div className='flex flex-row'>
+            <Button> Decrypt</Button>
+            <Button> Encrypt</Button>
+          </div>
+          <MessageField placeholder='enter a message here' />
+          <KeyPair  keyPair={{}} keyType={'private'} screenWidth={1000}  />
+          <FileUploader/>
+        </>} 
+      </ActionSection>
+    </AppContainer>
 
 
   );
