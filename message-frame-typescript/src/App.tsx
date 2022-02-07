@@ -11,7 +11,7 @@ import {
   RightButton,
   MessageField
 } from './core'
-
+// import Encrypted from './assets/encrypted.png'
 
 
 
@@ -23,7 +23,7 @@ export const App:FC = () => {
 
   return (
     <AppContainer>
-      {process.env.REACT_APP_API_URL }
+      {/* {process.env.REACT_APP_API_URL } */}
       <TitleSection>
         <Title > 
           message-frame
