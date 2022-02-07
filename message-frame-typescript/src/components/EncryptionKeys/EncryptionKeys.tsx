@@ -2,7 +2,7 @@
 import {FC} from 'react';
 import AceEditor from "react-ace";
 import "ace-builds/src-noconflict/theme-monokai";
-import "./KeyPair.css"
+import "./EncryptionKeys.css"
 
 
 const regularWidth = 435;
@@ -17,14 +17,14 @@ function determineWidth(screenWidth: number){
     }
 }
 
-interface KeyPairProps {
+interface EncryptionKeysProps {
     keyType: 'public' | "private";
     keyPair: any;
     screenWidth: number 
 }
 
 
-export const  KeyPair:FC<KeyPairProps> = ({keyType, screenWidth, keyPair})  => {
+export const  EncryptionKeys:FC<EncryptionKeysProps> = ({keyType, screenWidth, keyPair})  => {
   return (
         <div className="KeyPair-container">
             <div className='KeyPair-object-container '>
