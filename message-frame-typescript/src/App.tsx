@@ -1,5 +1,5 @@
-import { FC } from 'react'
-import { FileUploader, EncryptionKeys } from './components'
+import { FC, useState } from 'react'
+import { FileUploader, Key, EncryptionKey } from './components'
 import {
   AppContainer,
   TitleSection,
@@ -9,17 +9,15 @@ import {
   Loading,
   LeftButton,
   RightButton,
-  MessageField
+  MessageField,
+  KeysContainer
 } from './core'
-// import Encrypted from './assets/encrypted.png'
 
 
 
 
 export const App:FC = () => {
-  // const [image, setImage] = useState<any>()
-  
-
+  const [mode, setMode] = useState< "encrypt"| "decrypt" >( 'encrypt')
 
   return (
     <AppContainer>
@@ -38,11 +36,34 @@ export const App:FC = () => {
         : 
         <>
           <div className='flex flex-row'>
-            <LeftButton> Decrypt</LeftButton>
-            <RightButton> Encrypt</RightButton>
+            <LeftButton 
+              onClick={() => setMode('decrypt')}
+              style={ mode === "decrypt" ? { "background": "#ffff80", color: '#272822' } : { "background": '#272822'}} 
+            > 
+            Decrypt
+            </LeftButton>
+            <RightButton 
+              onClick={() => setMode('encrypt')}
+              style={ mode === "encrypt" ? { "background": "#ffff80",  color: '#272822' } : { "background": '#272822'}} 
+             > 
+             Encrypt
+             </RightButton>
           </div>
           <MessageField placeholder='Enter your secret message here!' />
-          <EncryptionKeys  keyPair={{}} keyType={'private'} screenWidth={1000}  />
+          <KeysContainer>
+            <EncryptionKey keyObject={{
+              type: "public", 
+              text: "text"
+            }}
+            selected={mode === 'decrypt'}
+            />
+            <EncryptionKey keyObject={{
+              type: "private", 
+              text: "text"
+            }}
+            selected={mode === 'encrypt'}
+            />
+          </KeysContainer>
           <FileUploader/>
         </>
         } 

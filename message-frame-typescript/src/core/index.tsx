@@ -35,3 +35,8 @@ export const LeftButton = styled.button.attrs( {
 export const RightButton = styled.button.attrs( {
   className: "text-white active:bg-yellow active:text-green  text-sm border-2 border-yellow bg-green p-2 rounded-r w-9/12 text-center"
 })``
+
+
+export const KeysContainer = styled.button.attrs( {
+  className: "flex justify-around items center w-3/4 overflow-hidden"
+})``

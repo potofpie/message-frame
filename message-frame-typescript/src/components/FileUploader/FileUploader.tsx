@@ -4,7 +4,7 @@ import Dropzone from 'react-dropzone-uploader'
 
 export const FileUploader:FC = () => {
     // specify upload params and url for your files
-    const getUploadParams = ({ meta }: any) => { return { url: 'https://httpbin.org/post' } }
+    // const getUploadParams = ({ meta }: any) => { return { url: 'https://httpbin.org/post' } }
     
     // called every time a file's `status` changes
     const handleChangeStatus = ({ meta, file }: any, status: any) => { console.log(status, meta, file) }
@@ -22,10 +22,10 @@ export const FileUploader:FC = () => {
             // preview: "w-5"
           } }
         maxFiles={1}
-        getUploadParams={getUploadParams}
+        // getUploadParams={getUploadParams}
         onChangeStatus={handleChangeStatus}
         onSubmit={handleSubmit}
-        inputContent="Select the image you would like to hiden your image in!"
+        inputContent="Select the image you would like to hiden your message in!"
   
         accept="image/*"
       />

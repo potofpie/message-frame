@@ -3,73 +3,38 @@ import {FC} from 'react';
 import AceEditor from "react-ace";
 import "ace-builds/src-noconflict/theme-monokai";
 import "./EncryptionKeys.css"
-
-
-const regularWidth = 435;
-
-function determineWidth(screenWidth: number){
-    let ratioCodeWindow = Math.round(screenWidth*.9) 
-    if(ratioCodeWindow < regularWidth){
-        return ratioCodeWindow
-    }
-    else{
-        return regularWidth
-    }
+import styled from 'styled-components'
+export interface Key {
+    type: 'public' | "private";
+    text: string;
+}
+interface EncryptionKeyProps {
+    keyObject: Key
+    selected: boolean
 }
 
-interface EncryptionKeysProps {
-    keyType: 'public' | "private";
-    keyPair: any;
-    screenWidth: number 
+const KeyEditor = styled.div.attrs( {
+    className: "border-solid border-yellow border-2 "
+  })``
+const KeyEditorTitle = styled.div.attrs( {
+className: "m-0 text-white p-2 text-xs	"
+})``
+
+
+export const EncryptionKey:FC<EncryptionKeyProps> = ({keyObject, selected}) => {
+    return (
+        <KeyEditor>
+            <KeyEditorTitle >{ keyObject.type } Key</KeyEditorTitle>
+            <AceEditor
+                mode="java"
+                theme="monokai"
+                name="UNIQUE_ID_OF_DIV"
+                height='215px'
+                readOnly={true ? false : true} 
+                showGutter={false}
+                value={"testing"}
+                editorProps={{ $blockScrolling: true }}
+            />
+        </KeyEditor>
+    )
 }
-
-
-export const  EncryptionKeys:FC<EncryptionKeysProps> = ({keyType, screenWidth, keyPair})  => {
-  return (
-        <div className="KeyPair-container">
-            <div className='KeyPair-object-container '>
-                <div className={ keyType === 'public' ? 'KeyPair-key-highlighted' : 'KeyPair-key'}>
-                    <p className='KeyPair-small-info'>Public Key</p>
-                    <AceEditor
-                        mode="java"
-                        theme="monokai"
-                        name="UNIQUE_ID_OF_DIV"
-                        showGutter={false} 
-                        height='215px'
-                        onChange={(e) => {
-                            let tmpKeyPair = keyPair
-                            tmpKeyPair.public = e
-                            // setKeyPair(tmpKeyPair)
-                        }}
-                        readOnly={keyType === 'public' ? false : true}
-                        // style={keyType === 'public' ? null : {color : '#595959'}}
-                        // width={screenWidth < 1000 ? determineWidth(screenWidth) : regularWidth} 
-                        value={String(keyPair['public'])}
-                        editorProps={{ $blockScrolling: true }}
-                    />
-                </div>
-                <div className={ keyType === 'private' ? 'KeyPair-key-highlighted' : 'KeyPair-key'}>
-                    <p className='KeyPair-small-info'>Private Key</p>
-                    <AceEditor
-                        mode="java"
-                        theme="monokai"
-                        name="UNIQUE_ID_OF_DIV"
-                        height='215px'
-                        onChange={(e) => {
-                            let tmpKeyPair = keyPair
-                            tmpKeyPair.private = e
-                            // setKeyPair(tmpKeyPair)
-                        }}
-                        readOnly={keyType === 'private' ? false : true}
-                        // style={keyType === 'private' ? null : {color : '#595959'}}
-                        // width={screenWidth < 1000 ? determineWidth(screenWidth) : regularWidth} 
-                        showGutter={false}
-                        value={String(keyPair['private'])}
-                        editorProps={{ $blockScrolling: true }}
-                    />
-                </div>
-            </div>
-        </div>
-  );
-}
-
