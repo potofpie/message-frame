@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { FC, useState } from 'react'
 import { FileUploader, Key, EncryptionKey } from './components'
 import {
@@ -10,7 +11,8 @@ import {
   LeftButton,
   RightButton,
   MessageField,
-  KeysContainer
+  KeysContainer,
+  Button
 } from './core'
 
 
@@ -18,6 +20,20 @@ import {
 
 export const App:FC = () => {
   const [mode, setMode] = useState< "encrypt"| "decrypt" >( 'encrypt')
+  const [keys, setKeys] = useState<Key[]>( [{text: "", type: "public" }, {text: "", type: "private"} ])
+
+
+
+  useEffect(()=> {
+
+    (async () => {
+      const response = await fetch('https://loripsum.net/api')
+      const text = await response.text()
+      setKeys( [{text, type: "public" }, {text, type: "private"} ] )
+
+    })()
+
+  },[])
 
   return (
     <AppContainer>
@@ -51,22 +67,18 @@ export const App:FC = () => {
           </div>
           <MessageField placeholder='Enter your secret message here!' />
           <KeysContainer>
-            <EncryptionKey keyObject={{
-              type: "public", 
-              text: "text"
-            }}
+            <EncryptionKey keyObject={keys[0]}
             selected={mode === 'decrypt'}
             />
-            <EncryptionKey keyObject={{
-              type: "private", 
-              text: "text"
-            }}
+            <EncryptionKey 
+            keyObject={keys[1]}
             selected={mode === 'encrypt'}
             />
           </KeysContainer>
           <FileUploader/>
         </>
         } 
+      <Button> Go! </Button >
       </ActionSection>
     </AppContainer>
 

@@ -2,7 +2,6 @@
 import {FC} from 'react';
 import AceEditor from "react-ace";
 import "ace-builds/src-noconflict/theme-monokai";
-import "./EncryptionKeys.css"
 import styled from 'styled-components'
 export interface Key {
     type: 'public' | "private";
@@ -13,15 +12,15 @@ interface EncryptionKeyProps {
     selected: boolean
 }
 
-const KeyEditor = styled.div.attrs( {
-    className: "border-solid border-yellow border-2 "
-  })``
-const KeyEditorTitle = styled.div.attrs( {
-className: "m-0 text-white p-2 text-xs	"
-})``
 
 
 export const EncryptionKey:FC<EncryptionKeyProps> = ({keyObject, selected}) => {
+    const KeyEditor = styled.div.attrs( {
+        className: `border-solid border-yellow ${ selected ? 'border-2' : 'border-4'  } `
+      })``
+    const KeyEditorTitle = styled.div.attrs( {
+    className: "m-0 text-white p-2 text-xs	"
+    })``
     return (
         <KeyEditor>
             <KeyEditorTitle >{ keyObject.type } Key</KeyEditorTitle>
@@ -30,9 +29,9 @@ export const EncryptionKey:FC<EncryptionKeyProps> = ({keyObject, selected}) => {
                 theme="monokai"
                 name="UNIQUE_ID_OF_DIV"
                 height='215px'
-                readOnly={true ? false : true} 
+                readOnly={selected ? false : true} 
                 showGutter={false}
-                value={"testing"}
+                value={keyObject?.text.trim()}
                 editorProps={{ $blockScrolling: true }}
             />
         </KeyEditor>
