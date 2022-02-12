@@ -10,11 +10,12 @@ export interface Key {
 interface EncryptionKeyProps {
     keyObject: Key
     selected: boolean
+    onChange: any
 }
 
 
 
-export const EncryptionKey:FC<EncryptionKeyProps> = ({keyObject, selected}) => {
+export const EncryptionKey:FC<EncryptionKeyProps> = ({keyObject, selected, onChange}) => {
     const KeyEditor = styled.div.attrs( {
         className: `border-solid border-yellow ${ selected ? 'border-2' : 'border-4'  } `
       })``
@@ -29,6 +30,7 @@ export const EncryptionKey:FC<EncryptionKeyProps> = ({keyObject, selected}) => {
                 theme="monokai"
                 name="UNIQUE_ID_OF_DIV"
                 height='215px'
+                onChange={onChange}
                 readOnly={selected ? false : true} 
                 showGutter={false}
                 value={keyObject?.text.trim()}

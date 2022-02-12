@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { FC, useState } from 'react'
 import { FileUploader, Key, EncryptionKey } from './components'
 import {
@@ -20,6 +20,7 @@ import {
 
 export const App:FC = () => {
   const [mode, setMode] = useState< "encrypt"| "decrypt" >( 'encrypt')
+  const [message, setMessage] = useState<string>()
   const [keys, setKeys] = useState<Key[]>( [{text: "", type: "public" }, {text: "", type: "private"} ])
 
 
@@ -65,14 +66,25 @@ export const App:FC = () => {
              Encrypt
              </RightButton>
           </div>
-          <MessageField placeholder='Enter your secret message here!' />
+          <MessageField 
+            placeholder='Enter your secret message here!' 
+            onChange={(event: any ) => 
+              setMessage(event.target.value) 
+            } 
+            value={message}
+          />
           <KeysContainer>
             <EncryptionKey keyObject={keys[0]}
             selected={mode === 'decrypt'}
+            // onChange={(v: string, e: any) => setKeys( (prevKeys: any) => {
+              
+            // })
+            // }
             />
             <EncryptionKey 
             keyObject={keys[1]}
             selected={mode === 'encrypt'}
+            onChange={(v: string, e: any) => console.log(v)}
             />
           </KeysContainer>
           <FileUploader/>
