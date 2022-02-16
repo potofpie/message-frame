@@ -52,7 +52,7 @@ export const App:FC = () => {
           <Loading/>
         : 
         <>
-          <div className='flex flex-row'>
+          <div className='flex flex-row m-4'>
             <LeftButton 
               onClick={() => setMode('decrypt')}
               style={ mode === "decrypt" ? { "background": "#ffff80", color: '#272822' } : { "background": '#272822'}} 
@@ -76,7 +76,8 @@ export const App:FC = () => {
           <KeysContainer>
             <EncryptionKey keyObject={keys[0]}
             selected={mode === 'decrypt'}
-            // onChange={(v: string, e: any) => setKeys( (prevKeys: any) => {
+            onChange={(v: string, e: any) => setKeys([{...keys[0], text: v } ,keys[1]] )   
+            }
               
             // })
             // }
@@ -84,7 +85,7 @@ export const App:FC = () => {
             <EncryptionKey 
             keyObject={keys[1]}
             selected={mode === 'encrypt'}
-            onChange={(v: string, e: any) => console.log(v)}
+            onChange={(v: string, e: any) => setKeys( [keys[0], {...keys[1], text: v }] ) }  
             />
           </KeysContainer>
           <FileUploader/>

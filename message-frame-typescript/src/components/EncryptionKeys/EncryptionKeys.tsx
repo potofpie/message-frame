@@ -17,14 +17,14 @@ interface EncryptionKeyProps {
 
 export const EncryptionKey:FC<EncryptionKeyProps> = ({keyObject, selected, onChange}) => {
     const KeyEditor = styled.div.attrs( {
-        className: `border-solid border-yellow ${ selected ? 'border-2' : 'border-4'  } `
+        className: `m-4 border-solid border-yellow ${ selected ? 'border-2' : 'border-4'  } `
       })``
     const KeyEditorTitle = styled.div.attrs( {
-    className: "m-0 text-white p-2 text-xs	"
+        className: "m-0 text-white p-2 text-xs	text-center"
     })``
     return (
         <KeyEditor>
-            <KeyEditorTitle >{ keyObject.type } Key</KeyEditorTitle>
+            <KeyEditorTitle >{ keyObject.type } key</KeyEditorTitle>
             <AceEditor
                 mode="java"
                 theme="monokai"
